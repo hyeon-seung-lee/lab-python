@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c253eb7c-0ab8-4775-88ae-ee4d168c6673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec01/ex06.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec01/ex07.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec01/ex08.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec01/ex09.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec01/ex10.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lec01/ex05.py" beforeDir="false" afterPath="$PROJECT_DIR$/lec01/ex05.py" afterDir="false" />
     </list>
@@ -20,10 +24,17 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="lhs" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1T8eVlTN3V54WPmzlrNfvpVMbs7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -40,8 +51,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ex05">
-    <configuration name="ex01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.ex10">
+    <configuration name="ex06" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -53,7 +64,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec01/ex01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec01/ex06.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -62,7 +73,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex02" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ex07" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,7 +85,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec01/ex02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec01/ex07.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,7 +94,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex03" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ex08" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,7 +106,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec01/ex03.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec01/ex08.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,7 +115,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex04" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ex09" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,7 +127,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec01/ex04.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec01/ex09.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,7 +136,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex05" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ex10" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,7 +148,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec01/ex05.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec01/ex10.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ex05" />
-        <item itemvalue="Python.ex04" />
-        <item itemvalue="Python.ex03" />
-        <item itemvalue="Python.ex02" />
-        <item itemvalue="Python.ex01" />
+        <item itemvalue="Python.ex10" />
+        <item itemvalue="Python.ex09" />
+        <item itemvalue="Python.ex08" />
+        <item itemvalue="Python.ex07" />
+        <item itemvalue="Python.ex06" />
       </list>
     </recent_temporary>
   </component>
@@ -174,10 +185,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="데이터 타입" />
+    <option name="LAST_COMMIT_MESSAGE" value="데이터 타입" />
   </component>
 </project>
