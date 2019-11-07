@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c253eb7c-0ab8-4775-88ae-ee4d168c6673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lec02_control/ex00.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec02_control/for03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec02_control/for04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec02_control/for05.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec02_control/for06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec02_control/while01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec02_control/while02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec02_control/while03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec03_function/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec03_function/function01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec03_function/function02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec03_function/function03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec03_function/function04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec03_function/function05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec03_function/function06.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec03_function/function07.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lec02_control/for02.py" beforeDir="false" afterPath="$PROJECT_DIR$/lec02_control/for02.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +39,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -59,8 +58,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ex00">
-    <configuration name="ex00" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.function07">
+    <configuration name="function03" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -68,11 +67,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec02_control" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec03_function" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec02_control/ex00.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec03_function/function03.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -81,7 +80,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="if03" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="function04" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -89,11 +88,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec02_control" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec03_function" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec02_control/if03.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec03_function/function04.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -102,7 +101,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="while01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="function05" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,11 +109,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec02_control" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec03_function" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec02_control/while01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec03_function/function05.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,7 +122,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="while02" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="function06" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -131,11 +130,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec02_control" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec03_function" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec02_control/while02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec03_function/function06.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,7 +143,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="while03" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="function07" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,11 +151,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec02_control" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec03_function" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec02_control/while03.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec03_function/function07.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ex00" />
-        <item itemvalue="Python.while03" />
-        <item itemvalue="Python.while02" />
-        <item itemvalue="Python.if03" />
-        <item itemvalue="Python.while01" />
+        <item itemvalue="Python.function07" />
+        <item itemvalue="Python.function06" />
+        <item itemvalue="Python.function05" />
+        <item itemvalue="Python.function04" />
+        <item itemvalue="Python.function03" />
       </list>
     </recent_temporary>
   </component>
