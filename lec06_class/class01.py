@@ -25,7 +25,7 @@ class BasicTv:
         self.volume = volume
 
     # 클래스 내부에서 정의하는 함수 : 메소드
-    def powerOnOff(self):
+    def power_on_off(self):
         if self.power:  # power가 True이면(TV가 켜져 있으면)
             self.power = False
             print('TV를 끕니다.')
@@ -33,7 +33,7 @@ class BasicTv:
             self.power = True
             print('TV를 켭니다.')
 
-    def channelUp(self):
+    def channel_up(self):
         if self.power:
             if self.channel < 5:
                 self.channel += 1
@@ -43,7 +43,7 @@ class BasicTv:
             pass
         print(f'채널 Up : {self.channel}')
 
-    def channelDown(self):
+    def channel_down(self):
         if self.power:
             if self.channel > 1:
                 self.channel -= 1
@@ -53,7 +53,7 @@ class BasicTv:
             pass
         print(f'채널 Down : {self.channel}')
 
-    def volumeUp(self):
+    def volume_up(self):
         if self.power:
             if self.volume < 15:
                 self.volume += 1
@@ -63,7 +63,7 @@ class BasicTv:
             pass
         print('볼륨 Up:', self.volume)
 
-    def volumeDown(self):
+    def volume_down(self):
         if self.power:
             if self.volume > 0:
                 self.volume -= 1
@@ -76,28 +76,28 @@ class BasicTv:
 
 # 클래스 설계(정의)
 
-# 클래스의 객체(instance)를 생성해서 변수에 저장
-# 생성자(constructor) 호출, -> 객체(object) 생성
-tv1 = BasicTv(power=False, channel=0, volume=0)
+if __name__ == '__main__':
+    # 클래스의 객체(instance)를 생성해서 변수에 저장
+    # 생성자(constructor) 호출, -> 객체(object) 생성
+    tv1 = BasicTv(power=False, channel=0, volume=0)
 
-# 생성자 : BasicTv
-print(tv1)
+    # 생성자 : BasicTv
+    print(tv1)
 
-tv1.powerOnOff()  #전원 on
-print(f'현재 채널 : {tv1.channel}')
+    tv1.power_on_off()  # 전원 on
+    print(f'현재 채널 : {tv1.channel}')
 
-tv1.channelDown()
-tv1.channelDown()
-tv1.channelUp()
-tv1.channelUp()
-tv1.channelUp()
-tv1.volumeDown()
-tv1.volumeDown()
-tv1.volumeUp()
+    tv1.channel_down()
+    tv1.channel_down()
+    tv1.channel_up()
+    tv1.channel_up()
+    tv1.channel_up()
+    tv1.volume_down()
+    tv1.volume_down()
+    tv1.volume_up()
 
-tv1.powerOnOff() # 전원 off
-print(f'현재 채널 : {tv1.channel}')
-print(f'현재 볼륨 : {tv1.volume}')
-tv1.channelDown()
-tv1.volumeUp()
-
+    tv1.power_on_off()  # 전원 off
+    print(f'현재 채널 : {tv1.channel}')
+    print(f'현재 볼륨 : {tv1.volume}')
+    tv1.channel_down()
+    tv1.volume_up()

@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c253eb7c-0ab8-4775-88ae-ee4d168c6673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lec05_module/module03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec05_module/module04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec05_module/module05.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec05_module/module06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec06_class/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec06_class/class01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec06_class/class02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec06_class/class03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec06_class/class04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec06_class/intro.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/mymath01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/mymath02.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lec06_class/class01.py" beforeDir="false" afterPath="$PROJECT_DIR$/lec06_class/class01.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +35,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -66,7 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.class04">
+  <component name="RunManager" selected="Python.class01">
     <configuration name="class01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,8 +162,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.class04" />
         <item itemvalue="Python.class01" />
+        <item itemvalue="Python.class04" />
         <item itemvalue="Python.class03" />
         <item itemvalue="Python.class02" />
         <item itemvalue="Python.intro" />
