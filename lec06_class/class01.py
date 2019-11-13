@@ -16,8 +16,11 @@ class BasicTv:
     """
     BasicTv 클래스
     """
+    max_channel, min_channel = 15, 1
+    max_volume, min_volume = 5, 1
 
     # init 함수 : 생성자가 호출됐을 때 자동으로 실행되는 메소드(함수)
+
     def __init__(self, power, channel, volume):
         print('BasicTv 생성자 호출')
         self.power = power
@@ -35,27 +38,27 @@ class BasicTv:
 
     def channel_up(self):
         if self.power:
-            if self.channel < 5:
+            if self.channel <= self.max_channel:
                 self.channel += 1
             else:
-                self.channel = 1
+                self.channel = self.min_channel
         else:
             pass
         print(f'채널 Up : {self.channel}')
 
     def channel_down(self):
         if self.power:
-            if self.channel > 1:
+            if self.channel >= self.min_channel:
                 self.channel -= 1
             else:
-                self.channel = 5
+                self.channel = self.max_channel
         else:
             pass
         print(f'채널 Down : {self.channel}')
 
     def volume_up(self):
         if self.power:
-            if self.volume < 15:
+            if self.volume <= self.max_volume:
                 self.volume += 1
             else:
                 pass
@@ -65,7 +68,7 @@ class BasicTv:
 
     def volume_down(self):
         if self.power:
-            if self.volume > 0:
+            if self.volume >= self.min_volume:
                 self.volume -= 1
             else:
                 pass
