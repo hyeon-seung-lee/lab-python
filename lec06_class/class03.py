@@ -25,17 +25,28 @@ class Employee:
         self.salary = self.salary * (1 + pct)
         return self.salary
 
-    def emp_info(self):
-        return (f'Employee Number : {self.empno} \n'
+    def __repr__(self):
+        return (f'(Employee Number : {self.empno} \n'
                 f'Employee Name : {self.ename} \n'
                 f'Salary : {self.salary} \n'
-                f'Department Number : {self.deptno}')
+                f'Department Number : {self.deptno})')
 
 
-employee1 = Employee(123, 'hslee', 30000, 100)
-print(f'Raised_salary : {employee1.raise_salary(0.3)}')
-print(employee1.emp_info())
-
+scott = Employee(123, 'hslee', 30000, 100)
+# print(f'Raised_salary : {scott.raise_salary(0.3)}')
+# print(scott.__repr__())
+gil_dong = Employee(500, 'honggildong', 10000, 20)
 
 x = (10, 20)
-print(x[1])
+
+
+ohssam = Employee(1012, '오쌤', 500, 30)
+
+employees = [ohssam, gil_dong, scott ]
+print(employees)
+print()
+
+print(sorted(employees, key = lambda x: x.empno))
+print()
+
+print(sorted(employees, key = lambda x: x.salary))

@@ -38,7 +38,7 @@ class BasicTv:
 
     def channel_up(self):
         if self.power:
-            if self.channel <= self.max_channel:
+            if self.channel < self.max_channel:
                 self.channel += 1
             else:
                 self.channel = self.min_channel
@@ -48,7 +48,7 @@ class BasicTv:
 
     def channel_down(self):
         if self.power:
-            if self.channel >= self.min_channel:
+            if self.channel > self.min_channel:
                 self.channel -= 1
             else:
                 self.channel = self.max_channel
@@ -58,7 +58,7 @@ class BasicTv:
 
     def volume_up(self):
         if self.power:
-            if self.volume <= self.max_volume:
+            if self.volume < self.max_volume:
                 self.volume += 1
             else:
                 pass
@@ -68,7 +68,7 @@ class BasicTv:
 
     def volume_down(self):
         if self.power:
-            if self.volume >= self.min_volume:
+            if self.volume > self.min_volume:
                 self.volume -= 1
             else:
                 pass
@@ -82,7 +82,7 @@ class BasicTv:
 if __name__ == '__main__':
     # 클래스의 객체(instance)를 생성해서 변수에 저장
     # 생성자(constructor) 호출, -> 객체(object) 생성
-    tv1 = BasicTv(power=False, channel=0, volume=0)
+    tv1 = BasicTv(power=False, channel=1, volume=0)
 
     # 생성자 : BasicTv
     print(tv1)
@@ -90,17 +90,13 @@ if __name__ == '__main__':
     tv1.power_on_off()  # 전원 on
     print(f'현재 채널 : {tv1.channel}')
 
-    tv1.channel_down()
-    tv1.channel_down()
-    tv1.channel_up()
-    tv1.channel_up()
-    tv1.channel_up()
-    tv1.volume_down()
-    tv1.volume_down()
-    tv1.volume_up()
+    for _ in range(16):
+        tv1.channel_up()
+    for _ in range(17):
+        tv1.channel_down()
+    for _ in range(6):
+        tv1.volume_up()
+    for _ in range(7
+                   ):
+        tv1.volume_down()
 
-    tv1.power_on_off()  # 전원 off
-    print(f'현재 채널 : {tv1.channel}')
-    print(f'현재 볼륨 : {tv1.volume}')
-    tv1.channel_down()
-    tv1.volume_up()
