@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c253eb7c-0ab8-4775-88ae-ee4d168c6673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec07_file/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec07_file/data/exam.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec07_file/file01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec07_file/file02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec07_file/file03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec07_file/file04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec07_file/file05.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec07_file/file06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec07_file/file07.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec07_file/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec07_file/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec07_file/test2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c253eb7c-0ab8-4775-88ae-ee4d168c6673" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
