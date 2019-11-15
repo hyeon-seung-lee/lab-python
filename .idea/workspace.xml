@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c253eb7c-0ab8-4775-88ae-ee4d168c6673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lec06_class/bank.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec06_class/inheritance01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lec06_class/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec07_file/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec07_file/data/exam.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec07_file/file01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec07_file/file02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec07_file/file03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec07_file/file04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec07_file/file05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec07_file/file06.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec07_file/file07.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec07_file/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec07_file/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lec07_file/test2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lec06_class/class07.py" beforeDir="false" afterPath="$PROJECT_DIR$/lec06_class/class07.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +46,9 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -56,8 +67,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.inheritance01">
-    <configuration name="bank" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.file07">
+    <configuration name="file03" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,11 +76,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec06_class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec07_file" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec06_class/bank.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec07_file/file03.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -78,7 +89,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="class07" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="file06" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,11 +97,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec06_class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec07_file" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec06_class/class07.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec07_file/file06.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -99,7 +110,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="inheritance01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="file07 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,7 +122,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/inheritance01.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/file07.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -120,7 +131,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="inheritance01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="file07" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -128,11 +139,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec06_class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec07_file" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec06_class/inheritance01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec07_file/file07.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,11 +160,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec06_class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lec07_file" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec06_class/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lec07_file/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.inheritance01" />
+        <item itemvalue="Python.file07" />
+        <item itemvalue="Python.file07 (1)" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.inheritance01 (1)" />
-        <item itemvalue="Python.bank" />
-        <item itemvalue="Python.class07" />
+        <item itemvalue="Python.file06" />
+        <item itemvalue="Python.file03" />
       </list>
     </recent_temporary>
   </component>
@@ -214,6 +225,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="데이터 타입" />
     <MESSAGE value="1113 commit by PyCharm" />
     <MESSAGE value="1113 commit2 by PyCharm" />
