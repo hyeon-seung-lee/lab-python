@@ -56,7 +56,7 @@ def get_sum_mean(data: list, col: int) -> tuple:
         column_sum += int(row[col])  # 그 행의 col 위치에 있는 아이템을 int로 변환 후 더함.
 
     column_mean = column_sum / len(data)  # 평균 계산
-
+    print(f'row: {row[1]}')
     return column_sum, column_mean
 
 
