@@ -34,11 +34,11 @@ def get_column(matrix, index):
         :return: 벡터(원소가 n 개인 1차원 리스트)
         """
 
-    # x = []
-    # for m in matrix:
-    #     x.append(m[index - 1])
-    # return x
-    return [x[index - 1] for x in matrix]
+    x = []
+    for m in matrix:
+        x.append(m[index - 1])
+    return x
+    # return [x[index - 1] for x in matrix]
 
 
 def make_matrix(nrows, ncols, fn):
@@ -80,7 +80,29 @@ def transpose(matrix):
         trans_matrix.append(rows)
         rows = []
 
-    return trans_matrix
+    # return trans_matrix
+    return [[matrix[j][i] for j in range(nrows)] for i in range(ncols)]
+
+
+def transpose2(matrix):
+    """
+    주어진 행렬에서 행과 열을 뒤바꾼 행렬(전치 행렬)을 리턴
+    ※ get_column 함수를 이용
+    :param matrix: matrix: n x m 행렬
+    :return: m x n 행렬
+    """
+    x = []
+    n, m = shape(matrix)
+    for i in range(m):
+        x.append(get_column(matrix, i + 1))
+    return x
+    # return [get_column(matrix, i+1) for i in range(m)]
+
+
+def transpose3(matrix):
+    nrows, ncols = shape(matrix)
+    t = make_matrix(ncols, nrows, lambda x, y: matrix[y][x])
+    return t
 
 
 if __name__ == '__main__':
@@ -102,8 +124,33 @@ if __name__ == '__main__':
     print('Shape of A :', shape(A))
     print('Shape of B :', shape(B))
 
-    print(get_column(B, 1))
+    print(get_column(A, 1))
     print(get_row(B, 1))
 
     print(make_matrix(3, 5, lambda x, y: 1))
+    print(transpose(A))
+    print(transpose2(A))
+    print(transpose3(A))
+
+    a = [1, 2, 3]
+    b = [4, 5, 6]
+    c = [7, 8, 9]
+
+    for x, y, z in zip(a, b, c):
+        print(x, y, z)
+
+    # unpacking 연산자: *
+    print('A =', A)
+    print('*A =', *A)
+    print('B =', B)
+    print('*B =', *B)
+
+    def transpose(matrix):
+        print('unpacking 연산자 *를 사용한 transpose')
+        t = []
+        for col in zip(*matrix):
+            print(col)
+            t.append(col)
+        return t
+        return [list(x) for x in zip(*matrix)]
     print(transpose(A))
