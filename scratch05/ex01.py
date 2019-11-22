@@ -1,5 +1,3 @@
-
-
 """
 통계
 
@@ -7,6 +5,8 @@
 """
 # from scratch04.ex01 import dot
 from math import sqrt
+
+
 def mean(x):
     """
     리스트 x의 모든 원소들의 평균을 계산해서 리턴
@@ -53,10 +53,9 @@ def quantile(x, p):
     """
     x.sort()
     n = len(x)
-    pct = int(n * p)-1
-    print(f'[{n}x{p} - 1 = int{n * p-1} -1]')
+    pct = int(n * p) - 1
+    print(f'[{n}x{p} - 1 = int{n * p - 1} -1]')
     return x[pct]
-
 
 
 def mode(x):
@@ -108,12 +107,8 @@ def de_mean(x):
     :return: 편차(deviation)들의 리스트
     """
 
-    mu = mean(x) # 평균
+    mu = mean(x)  # 평균
     return [x_i - mu for x_i in x]
-
-
-
-
 
 
 def variance(x):
@@ -154,8 +149,9 @@ def covariance(x, y):
 
     for i, j in zip(x, y):
         # print(f'i = {i}, j = {j}')
-        cov_sum += (i-avg_x)*(j-avg_y)
-    return cov_sum/(n-1)
+        cov_sum += (i - avg_x) * (j - avg_y)
+    return cov_sum / (n - 1)
+
 
 def correlation(x, y):
     """
@@ -164,12 +160,24 @@ def correlation(x, y):
     :param y:
     :return:
     """
-    return covariance(x, y)/ (standard_deviation(x)*standard_deviation(y))
+    sd_x = standard_deviation(x)
+    sd_y = standard_deviation(y)
+
+    if sd_x != 0 and sd_y != 0:
+        corr = covariance(x, y) / (standard_deviation(x) * standard_deviation(y))
+    else:
+        corr = 0
+
+    return corr
+
 
 if __name__ == '__main__':
     # a = [10, 21, 32, 4, 70, 40, 60, 56, 73, 100, 1]
-    a = [1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 6, 6, 6]
-    b = [2, 3, 3, 3, 5, 5, 6, 4, 5, 6, 6, 9, 8]
+    # a = [1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 6, 6, 6]
+    # b = [1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 6, 6, 6]
+    # b = [2, 3, 3, 3, 5, 5, 6, 4, 5, 6, 6, 9, 8]
+    a = [-2, -1 ,0, 1, 2]
+    b = [2, 1, 0, -1, -2]
     print(sorted(a))
     print('mean : ', mean(a))
     print('median :', median(a))
@@ -178,3 +186,4 @@ if __name__ == '__main__':
     print('--------------')
     print('covariance = ', covariance(a, b))
     print('correlation = ', correlation(a, b))
+
