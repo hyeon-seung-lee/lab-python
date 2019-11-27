@@ -123,3 +123,5 @@ if __name__ == '__main__':
     print('x2 =', x2)
     x3 = inverse_normal_cdf(0.999)
     print('x3 =', x3)
+
+
