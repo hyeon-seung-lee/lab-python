@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c253eb7c-0ab8-4775-88ae-ee4d168c6673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scratch08/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch08/ex01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch08/ex02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch08/ex03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_crawl_self/test2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_crawl_self/to_chracter_page_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_crawl_self/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_crawl_self/dic_link.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_crawl_self/ex01.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_crawl_self/to_character_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_crawl_self/help01.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_crawl_self/help01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/to_chracter_page_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_crawl_self/to_chracter_page_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -172,8 +167,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.to_chracter_page_test" />
-        <item itemvalue="Python.test2" />
         <item itemvalue="Python.to_character_page" />
+        <item itemvalue="Python.test2" />
         <item itemvalue="Python.hanyu_list" />
         <item itemvalue="Python.ex02" />
       </list>
