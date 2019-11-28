@@ -10,7 +10,7 @@ hanyu = ['东']
 def get_han_chr_link(han_chr):
     while True:
         try:
-            driver = webdriver.Chrome("C:/Users/user/Downloads/chromedriver.exe")
+            driver = webdriver.Chrome("D:/dev/chromedriver.exe")
             url = f'https://zh.dict.naver.com/#/search?range=all&query={han_chr}'
             driver.get(url)
             content = driver.page_source.encode('utf-8').strip()
