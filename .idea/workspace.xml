@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c253eb7c-0ab8-4775-88ae-ee4d168c6673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web_crawl_self/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_crawl_self/dic_link.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/dic_link.csv" beforeDir="false" afterPath="$PROJECT_DIR$/web_crawl_self/dic_link.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_crawl_self/to_chracter_page_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_crawl_self/to_chracter_page_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

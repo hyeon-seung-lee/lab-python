@@ -4,7 +4,7 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import pandas as pd
 
-hanyu = ['但']
+hanyu = ['东']
 
 
 def get_han_chr_link(han_chr):
