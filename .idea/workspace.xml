@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c253eb7c-0ab8-4775-88ae-ee4d168c6673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web_crawl_self/hsk_words.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lab-python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab-python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch08/ex04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch08/hw01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch08/mpg.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_crawl_self/csv_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_crawl_self/hsk_words_link.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_crawl_self/hsk_words_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch08/ex03.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch08/ex03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_crawl_self/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_crawl_self/test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch04/ex01.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch04/ex01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/hsk_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_crawl_self/hsk_words.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,8 +64,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hsk_words">
-    <configuration name="ex03" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.hsk_words_test">
+    <configuration name="ex01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="lab-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch04" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch04/ex01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ex02" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,7 +98,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch08/ex03.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch08/ex02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,7 +128,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="hsk_words_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,7 +140,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_crawl_self/test2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_crawl_self/hsk_words_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,7 +149,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="to_character_page" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="hw01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -133,32 +157,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_crawl_self" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch08" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_crawl_self/to_character_page.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="to_chracter_page_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="lab-python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_crawl_self" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_crawl_self/to_chracter_page_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch08/hw01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hsk_words_test" />
+        <item itemvalue="Python.hw01" />
         <item itemvalue="Python.hsk_words" />
-        <item itemvalue="Python.test2" />
-        <item itemvalue="Python.ex03" />
-        <item itemvalue="Python.to_character_page" />
-        <item itemvalue="Python.to_chracter_page_test" />
+        <item itemvalue="Python.ex01" />
+        <item itemvalue="Python.ex02" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573611213682</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hsk words. level crawling">
+      <created>1574992289289</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574992289290</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +233,7 @@
     <MESSAGE value="데이터 타입" />
     <MESSAGE value="1113 commit by PyCharm" />
     <MESSAGE value="1113 commit2 by PyCharm" />
-    <option name="LAST_COMMIT_MESSAGE" value="1113 commit2 by PyCharm" />
+    <MESSAGE value="hsk words. level crawling" />
+    <option name="LAST_COMMIT_MESSAGE" value="hsk words. level crawling" />
   </component>
 </project>

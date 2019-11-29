@@ -109,7 +109,7 @@ def vector_mean(vectors):
     :return: n차원 벡터(길이가 n인 1차원 리스트)
     """
 
-    return [scalar_multiply(1 / len(vectors), vector_sum(vectors))]
+    return scalar_multiply(1 / len(vectors), vector_sum(vectors))
 
 
 def sum_of_squares(vector):

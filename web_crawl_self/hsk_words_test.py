@@ -11,7 +11,7 @@ import pandas as pd
 from web_crawl_self.csv_reader import my_csv_reader
 
 
-def get_hsk_words(letter_link):
+def get_hsk_words(chr, letter_link):
     driver = webdriver.Chrome("C:/Users/user/Downloads/chromedriver.exe")
     # driver = webdriver.Chrome("D:/dev/chromedriver.exe")
     url = f'https://zh.dict.naver.com/{letter_link}'
@@ -28,12 +28,12 @@ def get_hsk_words(letter_link):
             hsk_words_url = titles.find('a', class_='link')
 
             if hsk_level:
-                hsk_level_title = hsk_level.text
+                hsk_word[chr].append(hsk_level.text)
                 # print(hsk_level_title)  # -> 'HSK _X_급 단어' 출력 가능 -> key?
-                hsk_word[hsk_level_title] = []
+
             else:
                 pass
-            hsk_word[hsk_level_title].append(hsk_words_url['href'])
+            hsk_word[chr].append(hsk_words_url['href'])
             print(hsk_word)
             driver.close()
 
@@ -50,7 +50,7 @@ chn_words_link = my_csv_reader(input_file)
 chn_hsk_link = []
 hsk_word = {}
 for row in chn_words_link:
-    get_hsk_words(row[2])
+    get_hsk_words(row[1], row[2])
 
 
 # 저장
