@@ -29,12 +29,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_ON_COMMIT_AND_PUSH" value="false" />
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="lhs" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1T8eVlTN3V54WPmzlrNfvpVMbs7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -45,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -64,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hsk_words_test">
+  <component name="RunManager" selected="Python.hsk_words">
     <configuration name="ex01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,8 +174,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.hsk_words_test" />
         <item itemvalue="Python.hsk_words" />
+        <item itemvalue="Python.hsk_words_test" />
         <item itemvalue="Python.to_character_page" />
         <item itemvalue="Python.hw01" />
         <item itemvalue="Python.ex01" />

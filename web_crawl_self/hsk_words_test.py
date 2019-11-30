@@ -2,9 +2,6 @@ import csv
 import os
 
 from selenium import webdriver
-import json
-import time
-from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import pandas as pd
 
@@ -55,7 +52,7 @@ def get_links_list(letter, crawl_data):
                         ,['hsk 5급 단어',"#/entry/zhko/57b6d821b45c4b60b89742b2f799e439"]
                         ,['hsk 6급 단어', "#/entry/zhko/22f9a79bacf24628af6ccfd37cac70e1","#/entry/zhko/eaade97be8ac4114a8b6ef3d63975f39"] }
     """
-    individual_data = {letter: []}  # dict 선언
+    # individual_data = {letter: []}  # dict 선언
     for titles in crawl_data:
         hsk_level = titles.find('div', class_='category')
         hsk_words_url = titles.find('a', class_='link')
@@ -71,11 +68,16 @@ def get_links_list(letter, crawl_data):
     return individual_data
 
 
+def save_dict_csv(data, name):
+    data_frame = pd.DataFrame(data.items())  # import pandas as pd
+    data_frame.to_csv(name, encoding='utf-8')
+
+
 # 실행부
 if __name__ == '__main__':
     input_file = os.path.join('dic_link.csv')
     chn_words_link = my_csv_reader(input_file)  # input_file로부터 주소를 받아온다
-
+    individual_data = {letter: []}  # dict 선언
     chn_hsk_link = []
 
     for row in chn_words_link:  # 주소 list를 순서대로 실행
@@ -87,18 +89,9 @@ if __name__ == '__main__':
             links_list = get_links_list(row[1], get_list)
             print(links_list)
             chn_hsk_link.append(links_list)  # return 받은 딕셔너리를 리스트에 추가
+            print(chn_hsk_link)
 
     # 저장
-    # hsk_word_link_data = pd.DataFrame(hsk_word.items())
-    # hsk_word_link_data.to_csv('hsk_words_link.csv', encoding='utf-8')
+    save_dict_csv(chn_hsk_link, 'hsk_words_link.csv')
 
-"""
-<div class="category">HSK 1급 단어</div>
-<a class="link" href="#/entry/zhko/c202b65ab2b04646bd90bd7bad00aea2">星期</a>
-<div class="category">HSK 5급 단어</div>
-<a class="link" href="#/entry/zhko/57b6d821b45c4b60b89742b2f799e439">明星</a>
-<div class="category">HSK 6급 단어</div>
-<a class="link" href="#/entry/zhko/22f9a79bacf24628af6ccfd37cac70e1">卫星</a>
-None         ->>     6급 단어 안에 포함되게 해야함
-<a class="link" href="#/entry/zhko/eaade97be8ac4114a8b6ef3d63975f39">零星</a>
-"""
+# 다음 과제 : dictionary 통합

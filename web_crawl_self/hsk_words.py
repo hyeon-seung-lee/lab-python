@@ -89,6 +89,7 @@ if __name__ == '__main__':
             links_list = get_links_list(row[1], get_list)
             print(links_list)
             chn_hsk_link.append(links_list)  # return 받은 딕셔너리를 리스트에 추가
+            print(chn_hsk_link)
 
     # 저장
     save_dict_csv(chn_hsk_link, 'hsk_words_link.csv')
