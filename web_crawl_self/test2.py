@@ -3,5 +3,6 @@ import pandas as pd
 abc = {'a': ['abc', 'aaa'], 'b': 'bcd'}
 abc['a'].append('cdef')
 
-print(abc['a'])
-
+d1 = {'a': 'xxxxxxxxxx'}
+d2
+d3

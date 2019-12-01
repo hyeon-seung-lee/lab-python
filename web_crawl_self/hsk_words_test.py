@@ -62,24 +62,26 @@ def get_links_list(letter, crawl_data):
         if type(hsk_level) == type(None):
             pass
         else:
-            individual_data[letter].append(hsk_level.text)  # hsk_level의 text부분만
-        individual_data[letter].append(hsk_words_url['href'])  # hsk_words_url의 'href'부분만
+            hsk_words_dict[letter].append(hsk_level.text)  # hsk_level의 text부분만
+        hsk_words_dict[letter].append(hsk_words_url['href'])  # hsk_words_url의 'href'부분만
 
-    return individual_data
+    return hsk_words_dict
 
-
-def save_dict_csv(data, name):
-    data_frame = pd.DataFrame(data.items())  # import pandas as pd
-    data_frame.to_csv(name, encoding='utf-8')
-
+#
+# def save_dict_csv(data, name):
+#     data_frame = pd.DataFrame(data.items())  # import pandas as pd
+#     data_frame.to_csv(name, encoding='utf-8')
+#
 
 # 실행부
 if __name__ == '__main__':
     input_file = os.path.join('dic_link.csv')
     chn_words_link = my_csv_reader(input_file)  # input_file로부터 주소를 받아온다
-    individual_data = {letter: []}  # dict 선언
     chn_hsk_link = []
-
+    hsk_words_dict = {}  # dict 선언
+    # for key in chn_words_link:  # dic_link.csv로부터 문자를 받아서 dict의 key를 미리 선언
+    #     hsk_words_dict = {key[1]: []}
+    # print(hsk_words_dict)
     for row in chn_words_link:  # 주소 list를 순서대로 실행
         get_list = get_hsk_words(row[2])
         print(row[1])
