@@ -57,8 +57,8 @@ def get_links_list(letter, crawl_data):
     for titles in crawl_data:
         hsk_level = titles.find('div', class_='category')
         hsk_words_url = titles.find('a', class_='link')
-        print('hsk_level', hsk_level)
-        print('hsk_words_url', hsk_words_url)
+        # print('hsk_level', hsk_level)
+        # print('hsk_words_url', hsk_words_url)
         # 'x급'이라는 말이 있을 경우, 맨 앞에 붙여준다.
         if type(hsk_level) == type(None):
             pass
@@ -76,7 +76,8 @@ def save_dict_csv(data, name):
 
 # 실행부
 if __name__ == '__main__':
-    input_file = os.path.join('dic_link.csv')
+    # input_file = os.path.join('dic_link.csv')  # Pycharm 에러로 다시 시작
+    input_file = os.path.join('hsk_words_304.csv')
     chn_words_link = my_csv_reader(input_file)  # input_file로부터 주소를 받아온다
 
     # chn_hsk_link = []
@@ -89,10 +90,22 @@ if __name__ == '__main__':
             pass
         else:
             links_list = get_links_list(row[1], get_list)
-            # print(links_list)
+            print(links_list)
             for key, value in links_list.items():
                 chn_hsk_link[key]=value  # return 받은 딕셔너리를 리스트에 추가
-            print(chn_hsk_link)
-            save_dict_csv(chn_hsk_link, 'hsk_words_link.csv')
-    # 저장
-    save_dict_csv(chn_hsk_link, 'hsk_words_link.csv')
+            # print(chn_hsk_link)
+            # 저장
+            # save_dict_csv(chn_hsk_link, 'hsk_words_link.csv') Pycharm 에러로 연결해서 재시작
+            save_dict_csv(chn_hsk_link, 'hsk_words_link2.csv')
+
+"""
+error?
+Traceback (most recent call last):
+  File "C:/Users/LVSTA/Desktop/GitHub/lab-python/web_crawl_self/hsk_words.py", line 87, in <module>
+    get_list = get_hsk_words(row[2])
+  File "C:/Users/LVSTA/Desktop/GitHub/lab-python/web_crawl_self/hsk_words.py", line 37, in get_hsk_words
+    if type(chr_container) == type(None):
+UnboundLocalError: local variable 'chr_container' referenced before assignment
+
++ 디버깅에 대해 알아보기
+"""
