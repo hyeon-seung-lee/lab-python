@@ -36,7 +36,7 @@ print("'country', 'lifeExtp', 'gdpPercap'만 출력: \n")
 print(df[cols])
 # DataFrame에서 행 인덱스가 0, 99, 999인 행들을 출력
 print('DataFrame에서 행 인덱스가 0, 99, 999인 행들을 출력')
-print(df.iloc[[0, 99, 999], 0:3])
+print(df.iloc[[0, 99, 999], ])
 # DataFrame에서 행 레이블이 840~851인 행들의 나라이름, 기대수명, 1인당 GDP를 출력
 print('DataFrame에서 행 레이블이 840~851인 행들의 나라이름, 기대수명, 1인당 GDP를 출력')
 print(df.loc[840:851, cols])
