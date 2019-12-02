@@ -2,15 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c253eb7c-0ab8-4775-88ae-ee4d168c6673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scratch08/ex04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch08/hw01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch08/mpg.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_crawl_self/csv_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_crawl_self/hsk_words_link.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_crawl_self/hsk_words_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch09/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch09/ex01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch09/ex02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch09/ex03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch09/ex03_solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch09/ex04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch09/ex05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch09/gapminder.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch09/test_result.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lab-python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab-python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch04/ex01.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch04/ex01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_crawl_self/hsk_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_crawl_self/hsk_words.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch08/hw01.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch08/hw01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch08/mpg.csv" beforeDir="false" afterPath="$PROJECT_DIR$/scratch08/mpg.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/csv_reader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/dic_link.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/hanyu_list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/help01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/hsk_words.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/hsk_words_304.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/hsk_words_link.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/hsk_words_link2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/hsk_words_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/test2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/to_character_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_crawl_self/to_chracter_page_test.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +66,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -66,8 +85,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hsk_words">
-    <configuration name="help01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.ex05">
+    <configuration name="ex02" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,11 +94,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_crawl_self" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch09" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_crawl_self/help01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch09/ex02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -88,7 +107,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hsk_words" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ex03" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -96,11 +115,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_crawl_self" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch09" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_crawl_self/hsk_words.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch09/ex03.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -109,7 +128,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hsk_words_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ex03_solution" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -117,11 +136,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_crawl_self" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch09" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_crawl_self/hsk_words_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch09/ex03_solution.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,7 +149,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ex04" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,11 +157,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_crawl_self" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch09" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_crawl_self/test2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch09/ex04.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,7 +170,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="to_character_page" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ex05" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -159,11 +178,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_crawl_self" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch09" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_crawl_self/to_character_page.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch09/ex05.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.hsk_words" />
-        <item itemvalue="Python.help01" />
-        <item itemvalue="Python.hsk_words_test" />
-        <item itemvalue="Python.test2" />
-        <item itemvalue="Python.to_character_page" />
+        <item itemvalue="Python.ex05" />
+        <item itemvalue="Python.ex04" />
+        <item itemvalue="Python.ex03" />
+        <item itemvalue="Python.ex02" />
+        <item itemvalue="Python.ex03_solution" />
       </list>
     </recent_temporary>
   </component>
@@ -237,5 +256,16 @@
     <MESSAGE value="1113 commit2 by PyCharm" />
     <MESSAGE value="hsk words. level crawling" />
     <option name="LAST_COMMIT_MESSAGE" value="hsk words. level crawling" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scratch09/ex05.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -26,7 +26,6 @@ def my_csv_reader(fn: str, header=True, encoding='utf-8') -> list:
             # 리스트 data에 추가한다.
             data.append(line.strip().split(','))
 
-
     return data
 
 
@@ -37,7 +36,7 @@ print(mpg_data)
 displ_cty = []
 
 for row in mpg_data:
-    x = [float(row[3]), float(row[8])]
+    x = [float(row[2]), float(row[7])]
     displ_cty.append(x)
 dataset = [(x, y) for x, y in displ_cty]
 
@@ -60,6 +59,16 @@ if __name__ == '__main__':
             theta = gradient_step(theta, gradient, -step)
         if (epoch + 1) % 10 == 0:
             print(f'{epoch}: {theta}')
+
+    for x, y in dataset:
+        plt.scatter(x, y, c='green')
+    xs = [x / 10 for x in range(0, 80)]
+    ys = [theta[0] * x + theta[1] for x in xs]
+    plt.title('dspl & cty')
+    plt.xlabel('dspl')
+    plt.ylabel('cty')
+    plt.plot(xs, ys, color='red')
+    # plt.show()
 
     print('\n=== 배치 경사 하강법 ===')
     step = 0.001
@@ -88,12 +97,12 @@ if __name__ == '__main__':
         if (epoch + 1) % 100 == 0:
             print(f'{epoch}: {theta}')
 
-    for x,y in dataset:
+    for x, y in dataset:
         plt.scatter(x, y, c='green')
     xs = [x / 10 for x in range(0, 80)]
-    ys = [theta[0]*x+theta[1] for x in xs]
+    ys = [theta[0] * x + theta[1] for x in xs]
     plt.title('dspl & cty')
     plt.xlabel('dspl')
     plt.ylabel('cty')
-    plt.plot(xs, ys)
+    plt.plot(xs, ys, color='blue')
     plt.show()
