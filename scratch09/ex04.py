@@ -40,3 +40,7 @@ print('??')
 # df.iloc[row_indices, col_indices]: 행과 열의 인덱스(숫자)
 print(df.loc[0:3, cols])
 print(df.iloc[0:3, 0:3])
+
+# 브랜드별 + 모델별 10개 행 출력
+print('groupby')
+print(df.groupby(['manufacturer', 'model']))

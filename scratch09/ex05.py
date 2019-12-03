@@ -22,10 +22,12 @@ df = pd.read_csv(file_path, sep='\t')
 print(df)
 # DataFrame의 행과 열의 개수 확인
 print('shape:', df.shape)
+ncols, nrows = df.shape
 # DataFrame의 앞의 데이터 5개를 출력
 print('head:', df.head())
 # DataFrame의 뒷쪽 데이터 5개를 출력
 print('tail:', df.tail())
+print(df.iloc[nrows-5:nrows])
 # DataFrame의 컬럼 이름들을 출력
 print('columnname:', df.columns)
 # DataFrame의 각 컬럼의 데이터 타입들을 출력
@@ -45,4 +47,4 @@ print('DataFrame에서 연도(year)별 기대 수명의 평균을 출력')
 print(df.groupby('year').mean())
 # DataFrame에서 연도(year)별 대륙(continent)별 기대 수명의 평균
 print('DataFrame에서 연도(year)별 대륙(continent)별 기대 수명의 평균')
-print(df.groupby(['continent', 'year']).mean())
+print(df.groupby(['year','continent'])['lifeExp'].mean())
