@@ -43,3 +43,4 @@ with open('emp.csv', mode='w', encoding='UTF-8', newline='') as f:
     for row in emp_table:
         # writter 객체의 writerrow() 메소드를 사용해서 한 줄씩 쓰기
         writer.writerow(row)
+

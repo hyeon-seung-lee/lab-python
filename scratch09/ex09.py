@@ -38,9 +38,10 @@ print('6:\n', )
 # print(np.isnan(emp_nocomm[0]))
 # print(np.isnan(np.nan))
 # emp_table.loc[emp_nocomm.notnull()]
-not_comm = np.isnan(emp_table['comm'])
-have_mgr = np.invert(np.isnan(emp_table['mgr']))
-job_mgr_clerk = (emp_table['job'] == 'MANAGER') | (emp_table['job'] == 'CLERK')
+# not_comm = np.isnan(emp_table['comm'])
+not_comm = emp_table['comm'].isna()
+have_mgr = ~np.isnan(emp_table['mgr'])
+job_mgr_clerk = emp_table['job'].isin(['MANAGER', 'CLERK'])
 print(emp_table[not_comm & have_mgr & job_mgr_clerk])
 
 # 7- 사원 이름에 'E'가 포함된 직원들의 [이름]을 출력 -> (str.contains())
