@@ -2,26 +2,31 @@ import cx_Oracle
 import pandas as pd
 
 
-def get_column_names_of(table, cursor_):
-    sql1 = """select column_name from user_tab_columns
-                where table_name = :table_name
-                order by column_id"""
-    # sql2 = 'select  * from :table_name'
-    cursor_.execute(sql1, table_name=table.upper())  # 끝에 세미콜론(;) 을 붙이면 안됨
-    # cursor_.execute(f'select * from {table}')
+def get_column_names_of(table, cursor):
+    # sql = f"""select column_name from user_tab_columns
+    #      where table_name = '{table.upper()}'
+    #      order by column_id"""
+    # cursor.execute(sql)
+    sql = """select column_name from user_tab_columns
+    where table_name = :tbl_name
+    order by column_id"""
+    cursor.execute(sql, tbl_name=table.upper())  # data binding
+    # cursor가 sql 문장의 :변수 위치에 데이터 타입에 맞게끔 값을 치환해 줌.
+    # 값이 문자열이면 '문자열' 형태로 :변수 위치에 치환됨.
     col_names = [row[0] for row in cursor]
     return col_names
 
 
-def select_all_from(table, cursor_):
-    # print(table.upper())
-    sql1 = f"select * from {table.upper()}"  # from 뒤의 컬럼명에는 '' 콜론이 오면 안되므로 데이터 바인딩을 사용할 수 없고, formatted string을 사용해야 한다
-    cursor_.execute(sql1)
-    # cursor_.execute(f'select * from {table}')
-    req_table = cursor.fetchall()
-    df_table = pd.DataFrame(req_table)
-    df_table.columns = get_column_names_of(table, cursor)
-    return df_table
+def select_all_from(table, cursor):
+    sql = f'select * from {table.upper()}'
+    # from 구문에서 테이블 이름은 ''로 감싸면 안되기 때문에
+    # data binding 방식을 사용할 수 없다.
+    cursor.execute(sql)
+    # data = cursor.fetchall()  # [row for row in cursor]
+    data_frame = pd.DataFrame(cursor)  # pd.DataFrame(data)
+    # 데이터 프레임에 컬럼 이름을 설정
+    data_frame.columns = get_column_names_of(table, cursor)
+    return data_frame
 
 
 if __name__ == '__main__':
@@ -30,43 +35,69 @@ if __name__ == '__main__':
     with cx_Oracle.connect('scott', 'tiger', dsn) as connection:
         # Cursor 객체 생성
         with connection.cursor() as cursor:
-            print(get_column_names_of('emp', cursor))  # ['empno', 'ename', 'job']
-            # connection.commit()
+            emp_columns = get_column_names_of('emp', cursor)
+            print(emp_columns)  # ['empno', 'enam', 'job', ...]
 
-            emp_df = select_all_from('emp', cursor)
+            emp_df = select_all_from('emp', cursor)  # pandas.DataFrame
+            # DataFrame은 테이블의 컬럼 이름(인덱스)를 포함하고 있어야 함.
             print(emp_df)
 
-            dept_df = select_all_from('dept', cursor)
+            dept_df = select_all_from('DEPT', cursor)
+            print(dept_df)
 
             salgrade_df = select_all_from('salgrade', cursor)
             print(salgrade_df)
 
-            connection.commit()
             # DataFrame에 새로운 컬럼을 추가
             # DataFrame['컬럼 이름'] = List, pandas.Series
             # emp_df에 salgrade 컬럼을 추가
-            # emp_df['sal'] 개수만큼에 대해서 반복:
-            # 선택한 행의 sal 값이 salgrade_df 어느 grade에 속하는지를 찾아야 함.
-            # -> salgrade_df의 행 개수만큼 반복하면서 LO, HI 와 비교
-            # -> DataFrame.iterrows() 함수 이용
-    # print(len(emp_df.iloc[:, 0]))
-    emp_df_salgrade = []
-    for i in range(len(emp_df.iloc[:, 0] + 1)):
-        print('i: ', i)
-        print('salary: ', emp_df['SAL'][i])
-        for j in range(len(salgrade_df.iloc[:, 0] + 1)):
-            # print('j: ',j)
-            if (emp_df['SAL'][i] <= salgrade_df['HISAL'][j]) and (emp_df['SAL'][i] >= salgrade_df['LOSAL'][j]):
-                emp_df_salgrade.append(salgrade_df['GRADE'][j])
-                print('grade:', salgrade_df['GRADE'][j])
-            else:
-                continue
-    print(emp_df_salgrade)
-    print(len(salgrade_df.iloc[:, 0]))
-    emp_df['SALGRADE'] = emp_df_salgrade
-    print(emp_df)
+            # emp_df['sal'] 개수만큼 대해서 반복:
+            sal_grade = []  # 급여 등급을 저장할 List
+            for sal in emp_df['SAL']:
+                # 선택된 sal 값이 salgrade_df 어느 grade에 속하는 지를 찾음
+                # -> salgrade_df의 행 개수만큼 반복하면서 LO, HI와 비교
+                # -> DataFrame.iterrows() 함수:
+                # 데이터 프레임의 (행 이름, 행) 튜플을 반복문 안에서 사용할 수 있게 해줌.
+                for _, row in salgrade_df.iterrows():
+                    if row['LOSAL'] <= sal <= row['HISAL']:
+                        # 급여 등급을 찾은 경우, List에 추가
+                        sal_grade.append(row['GRADE'])
+                        break  # salgrade_df 반복을 중지
+            emp_df['SAL_GRADE'] = sal_grade  # DataFrame에 새로운 컬럼 추가
+            print(emp_df)
 
-# SQL join - pandas.merge
+            # SQL join - pandas.merge
+            emp_dept = pd.merge(emp_df, dept_df, on='DEPTNO')
+            print(emp_dept)
 
-emp_dept = pd.merge(emp_df, dept_df, on='DEPTNO', how = 'left')
-print(emp_dept)
+            # pandas.merge(left, right, how, on, left_on, right_on, ...)
+            # left, right: 조인할 데이터 프레임
+            # how: 조인 방식(inner, left, right)
+            # on: 조인할 때 기준이 되는 컬럼 이름
+            # 조인의 기준이 되는 컬럼 이름이 데이터 프레임마다 다르면,
+            # left_on='left 데이터 프레임 컬럼', right_on='right DF column'
+
+            # emp_df, dept_df 데이터 프레임의 left, right join 결과 비교
+            emp_dept_left = pd.merge(emp_df, dept_df,
+                                     how='left', on='DEPTNO')
+            print(emp_dept_left)
+
+            emp_dept_right = pd.merge(emp_df, dept_df,
+                                      how='right', on='DEPTNO')
+            print(emp_dept_right)
+
+            # emp 테이블에서 mgr과 empno가 일치하는 join
+            # 1) innner, 2) left, 3) right join
+            emp_mgr = pd.merge(emp_df, emp_df, how='inner',
+                               left_on='MGR', right_on='EMPNO')
+            print(emp_mgr)
+
+            emp_mgr_left = pd.merge(emp_df, emp_df, how='left',
+                                    left_on='MGR', right_on='EMPNO')
+            print(emp_mgr_left)
+
+            emp_mgr_right = pd.merge(emp_df, emp_df, how='right',
+                                     left_on='MGR', right_on='EMPNO')
+            print(emp_mgr_right)
+            print(emp_mgr_right[['EMPNO_x', 'ENAME_x', 'MGR_x',
+                                 'EMPNO_y', 'ENAME_y']])

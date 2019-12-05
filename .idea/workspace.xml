@@ -2,42 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c253eb7c-0ab8-4775-88ae-ee4d168c6673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../chn_words_website/csv/hsk_words_link5.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chn_words_website/web_crawl_self/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch09/ex10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chn_words_website/(1)web_crawl_self/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/(2)make_database/sort_by_hsk_level.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chn_words_website/(1)web_crawl_self/csv_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/web_crawl_self/csv_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chn_words_website/(1)web_crawl_self/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/web_crawl_self/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chn_words_website/(1)web_crawl_self/divide_link.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/web_crawl_self/divide_link.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chn_words_website/(1)web_crawl_self/file_integration.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/web_crawl_self/file_integration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chn_words_website/(1)web_crawl_self/hanyu_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/web_crawl_self/hanyu_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chn_words_website/(1)web_crawl_self/hsk_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/web_crawl_self/hsk_words.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chn_words_website/(1)web_crawl_self/hsk_words_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/web_crawl_self/hsk_words_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chn_words_website/(1)web_crawl_self/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/web_crawl_self/test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chn_words_website/(1)web_crawl_self/to_character_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/web_crawl_self/to_character_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chn_words_website/(1)web_crawl_self/to_chracter_page_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/web_crawl_self/to_chracter_page_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch10/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch10/emp.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch10/emp_df.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch10/ex01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch10/ex02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch10/ex03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch10/ex04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch10/ex05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch10/tips.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chn_words_website/(2)make_database/dict_page_crawling.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/(2)make_database/dict_page_crawling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chn_words_website/(2)make_database/dict_page_crawling_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/(2)make_database/dict_page_crawling_testing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chn_words_website/(2)make_database/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/(2)make_database/test1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch09/ex08.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch09/ex08.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch09/ex09.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch09/ex09.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/certifi-2019.9.11.dist-info/DESCRIPTION.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/certifi-2019.9.11.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/certifi-2019.9.11.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/certifi-2019.9.11.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/certifi-2019.9.11.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/certifi-2019.9.11.dist-info/metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/certifi-2019.9.11.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/certifi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/certifi/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/certifi/cacert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/certifi/cacert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cx_Oracle-7.2.3.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cx_Oracle-7.2.3.dist-info/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cx_Oracle-7.2.3.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cx_Oracle-7.2.3.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cx_Oracle-7.2.3.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cx_Oracle-7.2.3.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cx_Oracle.cp37-win_amd64.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cx_Oracle.cp37-win_amd64.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch09/ex10.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch09/ex10.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +38,7 @@
         <option value="lhs" />
       </list>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../chn_words_website" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1T8eVlTN3V54WPmzlrNfvpVMbs7" />
@@ -95,29 +71,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dict_page_crawling">
-    <configuration name="dict_page_crawling" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="chn_words_website" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../chn_words_website/(2)make_database" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../chn_words_website/(2)make_database/dict_page_crawling.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ex10 (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.ex05">
+    <configuration name="ex01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,11 +80,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch10" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/ex10 (2).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch10/ex01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,7 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex10" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ex02" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -146,11 +101,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch09" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch09/ex10.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch10/ex02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,19 +114,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="to_character_page (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="chn_words_website" />
+    <configuration name="ex03" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../chn_words_website/web_crawl_self" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../chn_words_website/web_crawl_self/to_character_page.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch10/ex03.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,19 +135,40 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="to_character_page" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="chn_words_website" />
+    <configuration name="ex04" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../chn_words_website/(1)web_crawl_self" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../chn_words_website/(1)web_crawl_self/to_character_page.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch10/ex04.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ex05" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="lab-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch10" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch10/ex05.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.dict_page_crawling" />
-        <item itemvalue="Python.to_character_page (1)" />
-        <item itemvalue="Python.to_character_page" />
-        <item itemvalue="Python.ex10 (3)" />
-        <item itemvalue="Python.ex10" />
+        <item itemvalue="Python.ex05" />
+        <item itemvalue="Python.ex04" />
+        <item itemvalue="Python.ex02" />
+        <item itemvalue="Python.ex03" />
+        <item itemvalue="Python.ex01" />
       </list>
     </recent_temporary>
   </component>
