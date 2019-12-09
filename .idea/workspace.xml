@@ -2,176 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c253eb7c-0ab8-4775-88ae-ee4d168c6673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../chn_words_website/(2)make_database/letter_page_crawling.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chn_words_website/csv/hsk_words_dictionary3083.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chn_words_website/csv/letters_dictionary0.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chn_words_website/csv/letters_dictionary37.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/3679174131-postmessagerelay.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/9132394075348222862" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/R5ZafKr0PlZ7OmGMCk95d__fihE5gBkhkjuiGGCKDDU.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/ad.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/adb52da036f9de1d8f60c5d5bef60bf1.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/ads(1).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/ads(2).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/ads(3).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/ads.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/analytics.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/article.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/autocomplete.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/b3c23d395a5a6789ac67ec4797c82d95.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/bookmark.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/cb=gapi(1).loaded_0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/cb=gapi.loaded_0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/cb=gapi.loaded_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/cc.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/class.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/column.js(1).다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/column.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/common.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/consolas.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/cookie.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/cookie_push(1).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/cookie_push(2).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/cookie_push.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/data.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/event.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/f(1).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/f(2).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/f(3).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/f(4).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/f(5).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/f(6).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/f(7).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/f(8).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/fastbutton.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/font.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/ga.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/info.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/init.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/install_swiftype.min.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/intro-copy-machine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/jquery.min.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/l" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/l(1)" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/main-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/menu.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/modern.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/osd.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/osd_listener.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/platform.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/postmessageRelay.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/require.min.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/rpc_shindig_random.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/saved_resource(1).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/saved_resource(2).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/saved_resource(3).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/saved_resource(4).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/saved_resource(5).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/saved_resource(6).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/saved_resource(7).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/saved_resource.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/touch.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/wp-emoji-release.min.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/zrt_lookup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/120px-ADIL_ABD_AL-MAHDI_iq_(cropped).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/120px-Nofretete_Neues_Museum.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/120px-Sanjay_Dutt_snapped_promoting_his_film_‘Bhoomi’.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/140px-Hurricane_Connie_Radar.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/200px-190309_몬트_홍대_버스킹.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/31px-Commons-logo.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/35px-Mediawiki-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/35px-Wikibooks-logo.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/35px-Wikimedia_Community_Logo.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/35px-Wikiquote-logo.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/35px-Wikisource-logo.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/35px-Wikispecies-logo.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/35px-Wikivoyage-Logo-v3-icon.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/35px-Wiktionary-logo-v2.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/399px-Calliphora_vicina,_u,_Face,_DC_2014-04-24_-17.46.02_ZS_PMax_-_USGS_Bee_Inventory_and_Monitoring_Laboratory.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/41px-Wikiversity_logo_2017.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/47px-Wikidata-logo.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/51px-Wikinews-logo.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/load(1).php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/load(2).php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/load.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/poweredby_mediawiki_88x31.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/Wikipedia, the free encyclopedia_files/wikimedia-button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/ex06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/ex07.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/ex08.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/ex09.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/ex10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/ex11.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/ex12.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/ex13.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/analytics.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/async-ads.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/btn-close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/btn-member.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/btn-search2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/common.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/cse_element__ko.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/default(1).css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/default+ko.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/dropdown.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/f(1).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/f(2).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/github.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/highlight.pack.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/icon-chrome.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/icon-edge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/icon-firefox.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/icon-ie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/icon-opera.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/icon-safari.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/jquery-1.8.3.min.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/jquery.menu.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/style_new.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/swiper.min.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/link_tag_files/wrest.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/web01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/web02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/analytics.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/bookmark.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/common.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/cookie.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/data.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/event.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/f(1).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/f(2).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/font.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/ga.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/home.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/info.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/init.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/intro-school-winter2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/jquery.min.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/main-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/menu.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/modern.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/platform.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/require.min.js.다운로드" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch10/weberstudy_files/touch.js.다운로드" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chn_words_website/(2)make_database/dict_page_crawling.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/(2)make_database/dict_page_crawling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chn_words_website/(2)make_database/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/(2)make_database/test1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lab-python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab-python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chn_words_website/csv/letters_dictionary119.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chn_words_website/csv/letters_dictionary169.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chn_words_website/csv/letters_dictionary219.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chn_words_website/csv/letters_dictionary269.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chn_words_website/csv/letters_dictionary319.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chn_words_website/csv/letters_dictionary336.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chn_words_website/csv/letters_dictionary386.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chn_words_website/csv/letters_dictionary436.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chn_words_website/csv/letters_dictionary486.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chn_words_website/csv/letters_dictionary536.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chn_words_website/(2)make_database/letter_page_crawling.py" beforeDir="false" afterPath="$PROJECT_DIR$/../chn_words_website/(2)make_database/letter_page_crawling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -197,7 +38,7 @@
         <option value="lhs" />
       </list>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../chn_words_website" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1T8eVlTN3V54WPmzlrNfvpVMbs7" />
@@ -224,20 +65,20 @@
       <recent name="C:\dev\lab-python" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ex13">
-    <configuration name="ex11" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="lab-python" />
+  <component name="RunManager" selected="Python.letter_page_crawling">
+    <configuration name="class_application" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="chn_words_website" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../chn_words_website/(2)make_database" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch10/ex11.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../chn_words_website/(2)make_database/class_application.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -332,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.letter_page_crawling" />
+        <item itemvalue="Python.class_application" />
         <item itemvalue="Python.ex13" />
         <item itemvalue="Python.ex12" />
         <item itemvalue="Python.ex12 (1)" />
-        <item itemvalue="Python.ex11" />
-        <item itemvalue="Python.letter_page_crawling" />
       </list>
     </recent_temporary>
   </component>
@@ -413,22 +254,22 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1920.1200@0.0.1920.1200" timestamp="1575865562595" />
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1575882090234">
+    <state width="1342" height="285" key="GridCell.Tab.0.bottom" timestamp="1575891286399">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1575882090234" />
-    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1575882090234">
+    <state width="1342" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1575891286399" />
+    <state width="1342" height="285" key="GridCell.Tab.0.center" timestamp="1575891286398">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1575882090234" />
-    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1575882090234">
+    <state width="1342" height="285" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1575891286398" />
+    <state width="1342" height="285" key="GridCell.Tab.0.left" timestamp="1575891286398">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1575882090234" />
-    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1575882090234">
+    <state width="1342" height="285" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1575891286398" />
+    <state width="1342" height="285" key="GridCell.Tab.0.right" timestamp="1575891286399">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1575882090234" />
+    <state width="1342" height="285" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1575891286399" />
     <state x="461" y="241" key="SettingsEditor" timestamp="1575865228022">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
