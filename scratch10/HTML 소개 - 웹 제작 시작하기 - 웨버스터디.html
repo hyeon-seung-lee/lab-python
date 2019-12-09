@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://webberstudy.com/html-css/beginning/introduce-html/ -->
+<html lang="ko-KR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<!-- <meta name="naver-site-verification" content="5adb02c0bf23eda54d24964304e36ccb11a4dc33"/> -->
+<title>HTML 소개   - 웹 제작 시작하기 -  웨버스터디</title>
+
+
+<!-- All in One SEO Pack 2.3.4.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/u/0/103017169765613099252/">
+<meta name="description" content="웹의 세가지 요소 중 HTML의 역할과 특징이 무엇인지 알아보고, HTML 기본 태그 문법을 살펴보면서 왜 마크 업인지, 그리고 왜 중요한 지에 대해 알아봅니다.">
+
+<meta name="keywords" content="html,css,js,마크업,html 문법,html 원리,웹 표준,html 기초 문법,기초 태그,기초 마크업">
+
+<link rel="canonical" href="http://webberstudy.com/html-css/beginning/introduce-html/">
+<meta property="og:title" content="HTML 소개">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://webberstudy.com/html-css/beginning/introduce-html/">
+<meta property="og:image" content="//webberstd.cdn1.cafe24.com/img/intro/intro-copy-machine.png">
+<meta property="og:site_name" content="웨버스터디">
+<meta property="fb:admins" content="1536501039956619">
+<meta property="og:description" content="웹의 세가지 요소 중 HTML의 역할과 특징이 무엇인지 알아보고, HTML 기본 태그 문법을 살펴보면서 왜 마크 업인지, 그리고 왜 중요한 지에 대해 알아봅니다.">
+<meta property="article:published_time" content="2014-05-13T14:21:29Z">
+<meta property="article:modified_time" content="2015-01-27T12:26:17Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML 소개">
+<meta name="twitter:description" content="웹의 세가지 요소 중 HTML의 역할과 특징이 무엇인지 알아보고, HTML 기본 태그 문법을 살펴보면서 왜 마크 업인지, 그리고 왜 중요한 지에 대해 알아봅니다.">
+<meta name="twitter:image" content="//webberstd.cdn1.cafe24.com/img/intro/intro-copy-machine.png">
+		<script src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/osd.js.다운로드"></script><script src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/f(5).txt" id="google_shimpl"></script><script src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/cb=gapi.loaded_1" async=""></script><script src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/cb=gapi(1).loaded_0" async=""></script><script type="text/javascript" async="" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/cc.js.다운로드"></script><script async="" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/analytics.js.다운로드"></script><script type="text/javascript" async="" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/ga.js.다운로드"></script><script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-50961234-1']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+<!-- /all in one seo pack -->
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="웨버스터디 » HTML 소개 댓글 피드" href="http://webberstudy.com/html-css/beginning/introduce-html/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/webberstudy.com\/o-range\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.3"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/wp-emoji-release.min.js.다운로드" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="crayon-font-consolas-css" href="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/consolas.css" type="text/css" media="all">
+<link rel="stylesheet" id="swiftype-css" href="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/autocomplete.css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"P2dzDKs71Rdt-bBetZXN"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/install_swiftype.min.js.다운로드"></script>
+<link rel="https://api.w.org/" href="http://webberstudy.com/wp-json/">
+<link rel="shortlink" href="http://webberstudy.com/?p=188">
+<link rel="alternate" type="application/json+oembed" href="http://webberstudy.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwebberstudy.com%2Fhtml-css%2Fbeginning%2Fintroduce-html%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://webberstudy.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwebberstudy.com%2Fhtml-css%2Fbeginning%2Fintroduce-html%2F&amp;format=xml">
+<style type="text/css"> 
+</style>
+<meta name="google-site-verification" content="ag__7hYJLVsU9BtbNHVKgQc2clmVCCekLS9ZO7wJ9HY"><meta data-pso-pv="1.2.1" data-pso-pt="6a8107f3f5c487eaf9e2fdd20183ffbb5a7b325388c593f8910a210bcf1e489f" data-pso-th="7d3118126a5e8214459aab75af5f847d"><script pagespeed_no_defer="" data-pso-version="20151102_000727">window.dynamicgoogletags={config:[]};dynamicgoogletags.config=["ca-pub-7839575775830338",,[],,,,,,,,,,0.001];(function(){var e=this,g=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";
+else if("function"==b&&"undefined"==typeof a.call)return"object";return b};var k=String.prototype.trim?function(a){return a.trim()}:function(a){return a.replace(/^[\s\xa0]+|[\s\xa0]+$/g,"")},n=function(a,b){return a<b?-1:a>b?1:0};var p=function(){},q=[],r=function(a,b){if(b<a.f){var c=b+a.c,d=a.a[c];return d===q?a.a[c]=[]:d}d=a.b[b];return d===q?a.b[b]=[]:d};p.prototype.toString=function(){return this.a.toString()};var u=function(a){var b=a;a=t;b||(b=[]);this.c=-1;this.a=b;a:{if(this.a.length){var b=this.a.length-1,c=this.a[b];if(c&&"object"==typeof c&&"array"!=g(c)){this.f=b-this.c;this.b=c;break a}}this.f=Number.MAX_VALUE}if(a)for(b=0;b<a.length;b++)c=a[b],c<this.f?(c+=this.c,this.a[c]=this.a[c]||q):this.b[c]=this.b[c]||q};
+(function(){function a(){}a.prototype=p.prototype;u.m=p.prototype;u.prototype=new a;u.l=function(a,c,d){for(var h=Array(arguments.length-2),f=2;f<arguments.length;f++)h[f-2]=arguments[f];return p.prototype[c].apply(a,h)}})();var t=[3];var v=function(a,b){for(var c in a)Object.prototype.hasOwnProperty.call(a,c)&&b.call(void 0,a[c],c,a)};var w=function(a){var b="";v(a,function(a,d){if(0===a||a)b+="&"+d+"="+encodeURIComponent(String(a))});return b};var x;a:{var y=e.navigator;if(y){var z=y.userAgent;if(z){x=z;break a}}x=""};var A=-1!=x.indexOf("Opera")||-1!=x.indexOf("OPR"),B=-1!=x.indexOf("Trident")||-1!=x.indexOf("MSIE"),C=-1!=x.indexOf("Edge"),D=-1!=x.indexOf("Gecko")&&!(-1!=x.toLowerCase().indexOf("webkit")&&-1==x.indexOf("Edge"))&&!(-1!=x.indexOf("Trident")||-1!=x.indexOf("MSIE"))&&-1==x.indexOf("Edge"),E=-1!=x.toLowerCase().indexOf("webkit")&&-1==x.indexOf("Edge"),F=function(){var a=x;if(D)return/rv\:([^\);]+)(\)|;)/.exec(a);if(C)return/Edge\/([\d\.]+)/.exec(a);if(B)return/\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(a);
+if(E)return/WebKit\/(\S+)/.exec(a)},H=function(){var a=e.document;return a?a.documentMode:void 0},I=function(){if(A&&e.opera){var a;var b=e.opera.version;try{a=b()}catch(c){a=b}return a}a="";(b=F())&&(a=b?b[1]:"");return B&&(b=H(),b>parseFloat(a))?String(b):a}(),J={},K=function(a){if(!J[a]){for(var b=0,c=k(String(I)).split("."),d=k(String(a)).split("."),h=Math.max(c.length,d.length),f=0;0==b&&f<h;f++){var G=c[f]||"",T=d[f]||"",U=RegExp("(\\d*)(\\D*)","g"),V=RegExp("(\\d*)(\\D*)","g");do{var l=U.exec(G)||
+["","",""],m=V.exec(T)||["","",""];if(0==l[0].length&&0==m[0].length)break;b=n(0==l[1].length?0:parseInt(l[1],10),0==m[1].length?0:parseInt(m[1],10))||n(0==l[2].length,0==m[2].length)||n(l[2],m[2])}while(0==b)}J[a]=0<=b}},L=e.document,M=L&&B?H()||("CSS1Compat"==L.compatMode?parseInt(I,10):5):void 0;var N;if(!(N=!D&&!B)){var O;if(O=B)O=9<=M;N=O}N||D&&K("1.9.1");B&&K("9");var P=window;var Q;Q=new function(){this.g="http"+("http:"==P.location.protocol?"":"s")+"://pagead2.googlesyndication.com/pagead/gen_204?id=";this.i=.01;this.j=Math.random()};var R=function(){this.document=document},S=function(a,b,c){a=a.document.getElementsByTagName(b);for(b=0;b<a.length;++b)if(a[b].hasAttribute(c))return a[b].getAttribute(c);return null};var W=function(){var a=window;return a.dynamicgoogletags=a.dynamicgoogletags||{}};var X=function(){var a=W().config;if(a){var b=new R,a=new u(a),c=r(a,13);if(c){var d={};d.wpc=r(a,1);d.sv=S(b,"script","data-pso-version");d.tn=S(b,"meta","data-pso-pt");d.th=S(b,"meta","data-pso-th");d.w=0<window.innerWidth?window.innerWidth:null;d.h=0<window.innerHeight?window.innerHeight:null;try{if(Q.j<(c||Q.i)){var h=Q.g+"pso_unknown"+w(d),b=h=h.substring(0,2E3);e.google_image_requests||(e.google_image_requests=[]);var f=e.document.createElement("img");f.src=b;e.google_image_requests.push(f)}}catch(G){}}}W().loaded=
+!0};var Y=window;Y.addEventListener?Y.addEventListener("load",X,!1):Y.attachEvent&&Y.attachEvent("onload",X);})();
+</script><link href="http://webberstudy.com/ui1/ico/v1.2.ico" rel="icon" type="image/vnd.microsoft.icon" sizes="16x16 32x32 48x48 64x64">
+<link href="http://webberstudy.com/ui1/ico/v1.2-152.png" rel="apple-touch-icon" sizes="152x152">
+<link rel="prev" title="웹 제작 준비하기" href="http://webberstudy.com/html-css/beginning/prepare/">
+<link rel="next" title="HTML 시작하기" href="http://webberstudy.com/html-css/beginning/start-html/">
+<link href="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/init.css" media="screen" type="text/css" rel="stylesheet">
+<link href="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/menu.css" media="screen" type="text/css" rel="stylesheet">
+<link href="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/article.css" media="screen" type="text/css" rel="stylesheet">
+<style type="text/css">
+.column-on .btn-view-hoz {display: none;}
+.column-off .btn-viewer {display: none;}
+</style>
+<!--[if lt IE 8]>
+<link href="/ui1/main-ie7.css" media="screen" type="text/css" rel="stylesheet" />
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="/ui1/webberjs/lib/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+
+<script type="text/javascript">
+
+(function(){
+	var webber = {
+		pageId : '188',
+		pageType : 'class',
+		isCover : false	};
+
+	if (typeof window.webber !== "undefined") {
+		window.webberBefore = window.webber;
+	}
+		window.webber = webber;
+})();
+
+</script>
+<!-- Google Plus -->
+<script src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/platform.js.다운로드" async="" defer="" gapi_processed="true"></script>
+<!-- Google AD -->
+<script src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/f(6).txt" async=""></script>
+<link rel="preload" href="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/f(7).txt" as="script"><script type="text/javascript" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/f(7).txt"></script><link rel="preload" href="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/f(8).txt" as="script"><script type="text/javascript" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/f(8).txt"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="class" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/class.js.다운로드"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/jquery.min.js.다운로드"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../model/info" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/info.js.다운로드"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../core/modern" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/modern.js.다운로드"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../core/cookie" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/cookie.js.다운로드"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../view/common" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/common.js.다운로드"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../controller/ad" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/ad.js.다운로드"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../controller/menu" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/menu.js.다운로드"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../controller/opt/font" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/font.js.다운로드"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../controller/opt/bookmark" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/bookmark.js.다운로드"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../core/data" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/data.js.다운로드"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../core/event" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/event.js.다운로드"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../core/touch" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/touch.js.다운로드"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../controller/column" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/column.js.다운로드"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../controller/opt/column" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/column.js(1).다운로드"></script></head>
+
+<body class="column-on" style="font-size: 1em;">
+
+<div class="skip-group">
+	<a href="http://webberstudy.com/html-css/beginning/introduce-html/#main-content" class="skip-nav">본문으로 바로 이동</a>
+	<a href="http://webberstudy.com/html-css/beginning/introduce-html/#header-opt-layer" class="skip-nav">페이지 설정으로 이동</a>
+	<a href="http://webberstudy.com/html-css/beginning/introduce-html/#main-nav" class="skip-nav">메뉴로 이동</a>
+</div>
+<div class="body-frame" id="body-frame">
+
+<div class="wrapper">
+	<div class="block-layer" id="block-layer"> </div>
+	<header class="main-header" id="main-header" role="banner">
+		<button type="button" class="header-tog header-tog-nav btn-mobile bg-ui" id="toggler-nav" title="메뉴 보기">메뉴 보기</button>
+
+		<div class="main-logo row">
+			<a href="http://webberstudy.com/" class="logo-image row-item">
+				<img id="logo-image" class="img-svg" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/main-logo.png" alt="웨버스터디">
+				<!-- <span class="tmp-logo">LOGO</span> -->
+			</a>
+			<a href="http://webberstudy.com/html-css" class="page-type row-item">강의</a>
+			<a href="http://webberstudy.com/html-css/beginning/" class="sub-parent row-item" itemprop="isPartOf">웹 제작 시작하기</a>
+			<span class="page-title row-item">HTML 소개</span>
+		</div>
+		<!-- //main-logo -->
+		<button type="button" class="header-tog header-tog-opt header-tog-opt-m btn-mobile bg-ui" id="toggler-opt-m" title="설정 보기">설정</button>
+
+		<div class="main-opt-group" id="main-opt-group">
+			<div class="main-opt-wrap">
+				<div class="header-utility row">
+					<div class="main-search row row-item" role="search">
+						<form action="http://webberstudy.com/" method="get">
+							<input type="search" class="input-search row-item" id="input-search" title="검색어 입력" name="s" accesskey="f" autocomplete="off">
+							<button type="submit" class="submit-search row-item" id="submit-search">검색</button>
+						</form>
+					</div>
+					<!-- //main-search -->
+
+					<button type="button" class="header-tog header-tog-opt header-tog-opt-p bg-ui row-item" id="toggler-opt" title="설정 보기">설정</button>
+				</div>
+				<!-- //header-utility -->
+			</div>
+			<!-- //main-opt-wrap -->
+		</div>
+		<!-- //opt-group -->
+	</header>
+	<!-- //main-header -->
+
+	<div class="main-util" id="header-opt-layer">
+		<div class="util-frame">
+			<div class="util-frame-inner">
+				<div class="util-wrap">
+					<div class="main-search row">
+						<form action="http://webberstudy.com/" method="get">
+							<input type="search" class="input-search row-item" id="input-search-m" title="검색어 입력" name="s" autocomplete="off">
+							<button type="submit" class="submit-search row-item" id="submit-search-m">검색</button>
+						</form>
+					</div>
+					<!-- //main-search -->
+
+					<div class="main-opt">
+
+						<div class="opt-layer">
+							<div class="mode-title">페이지 설정</div>
+							<ul class="opt-list">
+								<li class="opt-item opt-item-viewer">
+									<button class="item-btn bg-ui btn-viewer" id="btn-viewer-ver" type="button">본문 세로 보기</button>
+									<button class="item-btn bg-ui btn-view-hoz" id="btn-viewer-hoz" type="button">본문 가로 보기</button>
+								</li>
+								<li class="opt-item opt-item-bookmark">
+									<button type="button" class="item-btn bg-ui btn-bookmark" id="btn-bookmark-on" title="사용할 경우, 홈에서 접속 시 마지막에 본 강의로 바로가기를 제공합니다" style="display: none;">책갈피 미 사용 중</button>
+									<button type="button" class="item-btn bg-ui btn-bookmark book-enable" id="btn-bookmark-off" title="사용할 경우, 홈에서 접속 시 마지막에 본 강의로 바로가기를 제공합니다" style="">책갈피 사용 중</button>
+								</li>
+								<li class="opt-item opt-item-font">
+									<div class="font-btns row">
+										<button type="button" class="item-btn btn-font-small" id="btn-font-small">글씨 <strong>작게</strong></button>
+										<button type="button" class="item-btn btn-font-big" id="btn-font-big">글씨 <strong>크게</strong></button>
+									</div>
+									<div class="font-size-ruler" id="font-size-ruler"><span id="font-size-point" class="ruler-point" style="left: 20%;"> </span></div>
+								</li>
+								<li class="opt-item opt-item-sns">
+									<div class="sns-wrap row">
+										<div class="sns-title row-item">페이지 공유</div>
+										<div class="sns-set row">
+
+											<a href="http://www.facebook.com/sharer/sharer.php?u=http://webberstudy.com/html-css/beginning/introduce-html/" class="row-item ico-sns sns-facebook" title="페이스북 공유하기"><span class="hide-txt">페이스북</span></a>
+											<a href="https://twitter.com/intent/tweet?text=HTML%20%EC%86%8C%EA%B0%9C&amp;url=http://webberstudy.com/html-css/beginning/introduce-html/" class="row-item ico-sns sns-twitter" title="트위터로 공유하기"><span class="hide-txt">트위터</span></a>
+											<a href="https://plus.google.com/share?url=http:http://webberstudy.com/html-css/beginning/introduce-html/" class="row-item ico-sns sns-google" title="구글 플러스로 공유하기"><span class="hide-txt">구글 플러스</span></a>
+										</div>
+									</div>
+								</li>
+								<li class="opt-item opt-item-message">
+									<div class="message-intro">
+										어떠한 의견도 좋습니다. 웨버스터디가 더 나은 모습이 되도록 의견을 보내주세요.
+									</div>
+									<div class="report-btns">
+										<a href="mailto:webberstudy@gmail.com" class="btn-report bg-ui btn-report-mail" title="이메일로 의견 보내기">이메일</a>
+										<a href="http://google.com/+WebberstudySns" class="btn-report bg-ui btn-report-gplus" title="구글플러스 방문하기">Google+</a>
+									</div>
+									<!-- //report-btns -->
+								</li>
+							</ul>
+							<!-- //opt-list -->
+						</div>
+						<!-- //opt-layer -->
+					</div>
+					<!-- //main-opt -->
+					<div class="copyright">©WebberStudy</div>
+				</div>
+				<!-- //util-wrap -->
+			</div>
+			<!-- //util-frame-inner -->
+		</div>
+		<!-- //util-frame -->
+	</div>
+	<!-- //main-util -->
+	<nav class="main-nav" id="main-nav">
+		<div class="nav-frame">
+			<div class="nav-frame-inner">
+				<div class="nav-wrap">
+					<div class="nav-sect nav-sect-class">
+						<span class="sect-link bg-ui sect-link-class">강의</span>
+						<ul class="nav-list">
+			<li class="main-item"><a class="main-link has-sub" href="http://webberstudy.com/html-css/beginning/">웹 제작 시작하기</a>
+				<div class="sub-list-wrap">
+					<ul class="sub-list">
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/beginning/introduce/">소개</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/beginning/what-can-do/">HTML, CSS로 할 수 있는 것들</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/beginning/prepare/">웹 제작 준비하기</a></li>
+						<li class="sub-item"><a class="sub-link now_on" href="http://webberstudy.com/html-css/beginning/introduce-html/">HTML 소개</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/beginning/start-html/">HTML 시작하기</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/beginning/start-css/">CSS 시작하기</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="main-item"><a class="main-link has-sub" href="http://webberstudy.com/html-css/html-1/">HTML 초급 (기초)</a>
+				<div class="sub-list-wrap">
+					<ul class="sub-list">
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-1/basic-knowledge/">HTML 기초 지식</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-1/head-element/">head 요소</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-1/block-and-inline/">블록과 인라인</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-1/headline-elements/">제목 요소</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-1/p-pre-br-hr-and-escape-char/">P, Pre, Br, Hr 태그 그리고 특수 문자</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-1/phrase-elements/">문구 요소들 1</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-1/anchor-element-id-attribute/">a 요소와 id 속성</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-1/image-format/">이미지 포맷</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-1/img-element/">img 요소</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-1/ol-ul-dl-list-element/">목록 요소</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-1/div-span-and-class-attr/">의미없는 요소 div와 span 그리고 class 속성</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-1/comment/">HTML 주석</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-1/html-1-conclusion/">HTML 초급 정리</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="main-item"><a class="main-link has-sub" href="http://webberstudy.com/html-css/css-1/">CSS 초급 (기초)</a>
+				<div class="sub-list-wrap">
+					<ul class="sub-list">
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-1/css-basic/">CSS 기초 지식</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-1/selector-1/">CSS 선택자 1</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-1/font-style/">서체의 종류와 스타일</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-1/text-style/">문자 스타일</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-1/background/">background (배경 스타일)</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-1/border/">border (테두리 스타일)</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-1/box-model/">박스 모델 (margin과 padding)</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-1/list-style/">list-style (리스트 스타일)</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-1/css-1-conclusion/">CSS 초급 정리</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="main-item"><a class="main-link has-sub" href="http://webberstudy.com/html-css/html-2/">HTML 중급</a>
+				<div class="sub-list-wrap">
+					<ul class="sub-list">
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-2/web-standard/">웹 표준</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-2/doctype/">doctype (독타입)</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-2/elements-should-not-use/">사용하지 말아야 할 요소들</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-2/phrase-elements-2/">문구 요소들 2</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-2/table-basic-structure/">테이블 요소의 기본 구조</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-2/table-symactic/">테이블 요소의 의미적 작성</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-2/tables-and-layout/">테이블 요소와 레이아웃</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="main-item"><a class="main-link has-sub" href="http://webberstudy.com/html-css/css-2/">CSS 중급</a>
+				<div class="sub-list-wrap">
+					<ul class="sub-list">
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-2/cross-browser/">크로스 브라우징</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-2/css-debugging/">CSS 디버깅, 개발자 도구</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-2/selector-2/">CSS 선택자 2</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-2/multiple-style-sheet-and-priority-order/">다중 CSS 스타일 시트와 우선 순위</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-2/display-and-visibility-property/">display와 visibility</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-2/overflow-float-clear/">overflow, float, clear</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-2/float-layout/">float 레이아웃</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/css-2/table-style/">table 스타일</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="main-item"><a class="main-link has-sub" href="http://webberstudy.com/html-css/html-3/">HTML 고급</a>
+				<div class="sub-list-wrap">
+					<ul class="sub-list">
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-3/meta-elements/">메타 요소 (meta 태그)</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-3/form-1/">Form 요소 1 (form 태그와 input 태그)</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-3/form-2/">Form 요소 2 (textarea와 input)</a></li>
+						<li class="sub-item"><a class="sub-link" href="http://webberstudy.com/html-css/html-3/form-3/">Form 요소 3 (button과 select, fieldset)</a></li>
+					</ul>
+				</div>
+			</li>
+</ul>
+					</div>
+					<!-- //nav-sect -->
+					<div class="nav-sect nav-sect-blog">
+						<span class="sect-link bg-ui sect-link-blog">블로그</span>
+						<ul class="nav-list">
+							<li class="main-item"><a href="http://webberstudy.com/blog/dev/" class="main-link">
+								개발도구								<span class="sub-count">1</span>
+							</a></li>
+						</ul>
+					</div>
+					<!-- //nav-sect -->
+				</div>
+				<!-- //nav-wrap -->
+				
+			</div>
+			<!-- //nav-frame-inner -->
+		</div>
+		<!-- //nav-frame -->
+		<div class="copyright">©WebberStudy</div>
+	</nav>
+	<!-- //main-nav -->
+	<div class="main-content" id="main-content" itemscope="" itemtype="http://schema.org/Article">
+		<div class="content-nav">
+			<div class="nav-wrap prev-wrap nav-edge" id="nav-prev">
+				<button type="button" id="btn-left" class="btn-move btn-left" title="이전 페이지 보기">이전 페이지</button>
+				<a href="http://webberstudy.com/html-css/beginning/prepare/" rel="prev" class="link-bro link-prev" title="웹 제작 준비하기 보러 가기">이전 글</a>
+			</div>
+			<!-- //prev-wrap -->
+			<div class="nav-wrap next-wrap" id="nav-next">
+				<button type="button" id="btn-right" class="btn-move btn-right" title="다음 페이지 보기">다음 페이지</button>
+				<a href="http://webberstudy.com/html-css/beginning/start-html/" rel="next" class="link-bro link-next" title="HTML 시작하기 보러 가기">다음 글</a>
+			</div>
+			<!-- //next-wrap -->
+		</div>
+		<!-- //content-nav -->
+
+		
+		<div class="content-frame" id="content-frame">
+			
+			<article class="main-article" id="main-article" role="main" style="left: 0px;">
+				<header class="arti-header">
+					<h1 itemprop="name"><span class="headline"><span class="head-ico bg-ui"> </span>HTML 소개</span></h1>
+					<dl class="arti-info">
+						<dt>최초 작성일</dt>
+						<dd><time itemprop="dateCreated" datetime="2014-05-13 14:21:29">2014-05-13</time></dd>
+						<dt>최종 수정일</dt>
+						<dd><time itemprop="dateModified" datetime="2015-01-27 12:26:17">2015-01-27</time></dd>
+					</dl>
+					
+				</header>
+				<div class="arti-body" id="arti-body" itemprop="articleBody">
+	<div class="arti-desc arti-desc-intro">
+		<div class="desc-title">이번 시간에는...</div>
+		<div class="desc-txt">웹의 세가지 요소 중 HTML의 역할과 특징이 무엇인지 알아보고, HTML 기본 태그 문법을 살펴보면서 왜 마크 업인지, 그리고 왜 중요한 지에 대해 알아봅니다.</div>
+	</div>
+					<h2>웹의 세가지 요소</h2>
+<p>일단 HTML을 시작하기 전에 앞서 소개 글에서 살펴보았던 웹의 3요소에 대해서 다시 간단하게 살펴보도록 하겠습니다. </p>
+<p>웹 페이지는 <strong>내용을 담당하는 HTML</strong>과 <strong>외형을 담당하는 CSS</strong> 그리고 <strong>동작을 담당하는 JavaScript</strong>로 이루어져있습니다. </p>
+<p>그렇다면 왜 하나로 만들지 않고, 굳이 세가지를 나누어 놨을까요?</p>
+<p>
+처음부터 이에 대해 자세히 설명하진 않겠습니다. 다만 이렇게 나누어져 있는 것이 여러분에게 웹 페이지를 더 쉽게 관리할 수 있게 한다고 말씀 드립니다.</p>
+<p>
+예를 하나 들어 만약 여러분이 홈페이지를 만들게 된다면, 분명 그 홈페이지에는 단 한 개의 페이지가 아닌 여러 개의 페이지로 구성되어있을 것입니다. 만약 여러분의 많은 내용을 담느라 약 백여 개의 페이지를 만들었다고 가정 합시다. (intro.html, 1.html, 2.html ... 100.html 이런 식으로요) 여기서 페이지의 제목 글이 붉은색 글씨였는데, 이제 여러분은 이 글씨를 파란색으로 바꾸고 싶은 상황이 왔습니다.
+</p>
+<p>
+어떻게 해야 할까요? 만약 역할이 분리되지 않고 html에 모두 담았다면, 여러분들은 페이지마다 다 열어서 수정해야 합니다. 정말 끔찍한 상황이죠. 그나마 다 잘해내면 다행인데 그 중에 실수가 있을 수도 있습니다.
+</p>
+<p>
+하지만, 분리되어있기에 여러분은 css에서 간단하게 글씨색상 부분만 수정해주면 모든 페이지들이 일괄적으로 변경됩니다. 너무나도 간단하게 할 수 있는 일입니다.
+</p>
+<p>
+그만큼, 각 역할별로 나뉘어져 있다는 것은 정말 큰 축복입니다. 그럼 이제 그 중 내용을 담당하는 HTML에 대해 알아보겠습니다. 
+</p>
+<figure class="page-image"><img src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/intro-copy-machine.png" alt="여러분은 일괄적인 수정을 위해서 Ctrl+C, Ctrl+V를 많이 사용합니다."> <figcaption>여러분을 복사기로 만들지 마세요.</figcaption></figure>
+
+<div class="content-ad ad-300x250 ad-in-txt"><div class="ad-frame"><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px;" data-ad-client="ca-pub-7839575775830338" data-ad-slot="7975472008" data-adsbygoogle-status="done" data-overlap-observer-io="true"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:300px;height:250px;" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/saved_resource(3).html"></iframe></ins></ins></ins></div></div><h2>하이퍼 텍스트 마크업 랭귀지 (Hyper Text Markup Language)</h2>
+<p>이제 본격적으로 HTML에 대해 알아보도록 하겠습니다.</p>
+<p>지난 소개 글에서 말씀 드렸듯이 HTML은 (Hyper Text Markup Language)의 약자입니다. 이제 저 영어구문을 살펴보겠습니다. </p>
+<p>
+먼저 앞의 하이퍼텍스트(Hyper Text)는 여러분이 본문 중에 클릭했을 때에 페이지가 이동하는 링크라고 보면 됩니다. <strong>웹 페이지는 이 하이퍼텍스트를 통해서 서로 연결되어있습니다.</strong>
+</p>
+<p><a href="http://google.co.kr/">이 텍스트는 구글로 이동하는 하이퍼텍스트 입니다.</a></p>
+<p>그 다음 마크 업 랭귀지(Markup Language)에서 랭귀지(Language)는 그냥 언어라는 뜻이고, 마크 업이라는 것은 다음과 같이 생각하시면 이해가 되실 겁니다. </p>
+<p>
+여러분이 학교에서 수업을 듣고 있다고 가정 합니다. 수업을 듣는 동안 이른바 족집게 선생님들이 자주 쓰시는 말이 있죠. '여기에 밑줄 쫙!' 그러면 여러분들은 그 곳에 밑줄을 치거나, 형광 펜으로 색을 칠합니다. 이러한 것이 바로 마크 업입니다. </p>
+<p>자 그럼 다음의 예시 문서를 보면서 왜 마크 업을 하는지를 살펴보겠습니다. </p>
+<p>아래의 글에서 어디가 제목이고 어디가 본문일인지 체크해보시기 바랍니다. </p>
+<figure class="arti-text">
+ <div class="text-frame">
+  <strong class="big3">HTML</strong> <br><br>
+  <strong class="big2">역사</strong> <br><br>
+  <strong class="big1">개발</strong> <br>
+  1980년, 유럽 입자 물리 연구소(CERN)의 계약자였었던 물리학자 팀 버너스리가 HTML의 원형인 인콰이어를 제안하였다. <br>
+  ~ 중략 ~ <br>
+  버너스리의 개인적인 기록에 1990년부터 "하이퍼텍스트가 사용되는 여러 분야의 일부"를 열거했고 백과사전을 그 목록의 첫 번째로 두었다. <br><br>
+  <strong class="big1">최초 규격</strong> <br>
+  HTML 최초의 일반 공개 설명은 1991년 말에 버너스리가 처음으로 인터넷에서 문서를 "HTML 태그"(HTML tag)로 부르면서 시작되었다. <br>
+ </div>
+ <div class="origin">출처 : 위키피디아</div>
+</figure>
+
+<p>답은 아래와 같습니다.</p>
+<figure class="arti-text">
+ <div class="text-frame">
+  <strong class="big3 mark1">HTML</strong> <span class="status">대 제목</span> <br><br>
+  <strong class="big2 mark1">역사</strong> <span class="status">중 제목</span><br><br>
+  <strong class="big1 mark1">개발</strong> <span class="status">소 제목</span><br>
+  <span class="mark2">1980년, 유럽 입자 물리 연구소(CERN)의 계약자였었던 물리학자 팀 버너스리가 HTML의 원형인 인콰이어를 제안하였다.</span> <span class="status">본문</span> <br>
+  ~ 중략 ~ <br>
+  <span class="mark2">버너스리의 개인적인 기록에 1990년부터 "하이퍼텍스트가 사용되는 여러 분야의 일부"를 열거했고 백과사전을 그 목록의 첫 번째로 두었다.</span> <span class="status">본문</span><br><br>
+  <strong class="big1 mark1">최초 규격</strong> <span class="status">소제목</span><br>
+  <span class="mark2">HTML 최초의 일반 공개 설명은 1991년 말에 버너스리가 처음으로 인터넷에서 문서를 "HTML 태그"(HTML tag)로 부르면서 시작되었다.</span> <span class="status">본문</span><br>
+ </div>
+ <div class="origin">출처 : 위키피디아</div>
+</figure>
+<p>
+아마 여러분은 직감적으로 무엇이 제목이고 무엇이 문단인지 알 수 있으셨을 겁니다. 마크 업은 이렇게 문서의 내용에서 어느 부분이 어느 역할을 하는지 명시 해주는 것입니다. 
+</p>
+
+<div class="content-ad ad-300x250 ad-in-txt"><div class="ad-frame"><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px;" data-ad-client="ca-pub-7839575775830338" data-ad-slot="1253194401" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0px;width:300px;height:250px;" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/saved_resource(4).html"></iframe></ins></ins></ins></div></div><h2>왜 마크 업일까?</h2>
+<p>그렇다면 왜 그냥 보면 알 수 있는 것을 왜 굳이 명시를 해줘야 할까요?</p>
+<p>왜냐하면 여러분의 웹에 접근하는 존재가 너무 다양하기 때문입니다. </p>
+<p>
+웹 서핑이라는 것은 누구나 할 수 있습니다. 설령 눈앞이 보이지 않는 시각장애이라 할지라도, 스크린리더라는 화면을 음성으로 읽어주는 프로그램을 통해서 웹 서핑을 합니다. 또한 심지어 사람이 아닌 존재도 여러분의 홈페이지를 방문합니다. 바로 검색엔진이죠. 검색엔진 역시 여러분의 웹 페이지를 읽습니다. 
+</p>
+<p>그렇다면, 검색엔진이나 스크린 리더는 위의 글이 어떻게 읽히게 될까요?</p>
+<figure class="arti-text">
+ <div class="text-frame">
+HTML 역사 개발 1980년, 유럽 입자 물리 연구소(CERN)의 계약자였었던 물리학자 팀 버너스리가 HTML의 원형인 인콰이어를 제안하였다. ~ 중략 ~ 버너스리의 개인적인 기록에 1990년부터 "하이퍼텍스트가 사용되는 여러 분야의 일부"를 열거했고 백과사전을 그 목록의 첫 번째로 두었다. 최초 규격 HTML 최초의 일반 공개 설명은 1991년 말에 버너스리가 처음으로 인터넷에서 문서를 "HTML 태그"(HTML tag)로 부르면서 시작되었다. 
+ </div>
+ <div class="origin">출처 : 위키피디아</div>
+</figure>
+<p>
+마크 업을 하지 않는다면 이런 식으로 읽게 됩니다. 여기서 어디가 제목이고, 어디가 문단일까요? 이제는 여러분들도 찾기 힘들어졌습니다. 시각장애인은 읽으면서 앞뒤 문맥으로 유추를 할 수 있을지도 모르겠지만, 눈치 없는 검색엔진은 이것을 어떻게 받아드릴까요?
+</p>
+<p>
+이 세상에는 수 없이 많은 웹 페이지들이 존재하고, 또 계속해서 생겨나고 있습니다. 우리는 그 중에서 우리에게 필요한 정보만을 검색합니다. 만약 여러분이 제대로 마크 업을 하지 않는다면, 어쩌면 당신의 웹 페이지는 검색되지 않은 채로 그저 어딘가 존재하는 것으로 만족해야 할 수 있습니다. 그렇기 때문에 마크 업은 웹 페이지 제작에 있어서 너무나도 중요한 요소입니다. 
+</p>
+
+<div class="content-ad ad-300x250 ad-in-txt"><div class="ad-frame"><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px;" data-ad-client="ca-pub-7839575775830338" data-ad-slot="2729927604" data-adsbygoogle-status="done"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_3_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;border:0px;width:300px;height:250px;" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/saved_resource(5).html"></iframe></ins></ins></ins></div></div><h2>마크 업 태그 형태</h2>
+<p>그렇다면 html문서 안에서 마크 업을 어떻게 해야 할까요?</p>
+<figure class="arti-text">
+ <div class="text-frame">
+  <strong class="big3 mark1">HTML의 역사</strong> <span class="status">제목</span> <br>
+  1980년, 유럽 입자 물리 연구소(CERN)의 계약자였었던 물리학자 팀 버너스리가 HTML의 원형인 인콰이어를...
+ </div>
+</figure>
+<p>저 위의 <strong>'HTML의 역사'</strong>이라는 문구가 제목 부분인지를 어떻게 표시를 해줄까요?</p>
+<p>바로 해당 부분을 태그(Tag)로 감싸주는 것입니다.</p>
+<figure class="arti-code">
+<code>
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5de9e3f64d5fb909877319" class="crayon-syntax crayon-theme-idle crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover wrap" style=" ">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style=""><div class="crayon-num" data-line="crayon-5de9e3f64d5fb909877319-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style=" -moz-tab-size:2; -o-tab-size:2; -webkit-tab-size:2; tab-size:2;"><div class="crayon-line" id="crayon-5de9e3f64d5fb909877319-1"><span class="crayon-o">&lt;</span><span class="crayon-i">tag</span><span class="crayon-o">&gt;</span><span class="crayon-cn">HTML</span>의<span class="crayon-h"> </span>역사<span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-i">tag</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0014 seconds] -->
+
+</code>
+</figure>
+<p>
+위와 같이 "&lt; &gt;"의 형태로 이루어진 태그로 해당 영역을 감싸주면 되는데요, &lt;tag&gt;의 형태로 시작해서 &lt;/tag&gt; 형태로 끝이 납니다. 그래서 그 사이에 텍스트가 해당 태그의 의미를 가지고 있다는 뜻이 됩니다.
+</p>
+<p>
+<strong>&lt;tag&gt;</strong>와 같이 시작하는 태그를 <strong>'여는 태그 (Opening Tag)'</strong>라 하고요, 
+<strong>&lt;/tag&gt;</strong>와 같이 끝내는 태그를 <strong>'닫는 태그 (Closing Tag)'</strong>라고 합니다. 정확히 명칭을 꼭 외우실 필요는 없습니다.
+</p>
+<p>그렇다면 앞의 예문을 태그로 감싸 보겠습니다.</p>
+<figure class="arti-code">
+<code>
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5de9e3f64d60f727134832" class="crayon-syntax crayon-theme-idle crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover wrap" style=" ">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style=""><div class="crayon-num" data-line="crayon-5de9e3f64d60f727134832-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5de9e3f64d60f727134832-2">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style=" -moz-tab-size:2; -o-tab-size:2; -webkit-tab-size:2; tab-size:2;"><div class="crayon-line" id="crayon-5de9e3f64d60f727134832-1"><span class="crayon-o">&lt;</span><span class="crayon-i">h1</span><span class="crayon-o">&gt;</span><span class="crayon-cn">HTML</span>의<span class="crayon-h"> </span>역사<span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-i">h1</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5de9e3f64d60f727134832-2"><span class="crayon-o">&lt;</span><span class="crayon-i">p</span><span class="crayon-o">&gt;</span><span class="crayon-cn">1980</span>년<span class="crayon-sy">,</span><span class="crayon-h"> </span>유럽<span class="crayon-h"> </span>입자<span class="crayon-h"> </span>물리<span class="crayon-h"> </span>연구소<span class="crayon-sy">(</span><span class="crayon-cn">CERN</span><span class="crayon-sy">)</span>의<span class="crayon-h"> </span>계약자였었던<span class="crayon-h"> </span>물리학자<span class="crayon-h"> </span>팀<span class="crayon-h"> </span>버너스리가<span class="crayon-h"> </span><span class="crayon-cn">HTML</span>의<span class="crayon-h"> </span>원형인<span class="crayon-h"> </span>인콰이어를<span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-i">p</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0033 seconds] -->
+
+</code>
+</figure>
+<p>
+이런 식입니다. 저기서 &lt;h1&gt;은 제목이라는 의미를 가지고 있고, 아래 &lt;p&gt;는 문단이란 의미를 가지고 있습니다. 태그 종류들은 나중에 다시 살펴보겠습니다. 일단 마크 업을 어떠한 원리로 작성하는 지만 이해하세요. 
+</p>
+<p>그럼 다음 강의에서 html파일을 만들어 보도록 하겠습니다. </p>
+
+<div class="arti-desc arti-desc-point">
+ <div class="desc-title">요점 정리</div>
+ <div class="desc-txt">
+  <ul class="point-list">
+   <li>웹의 3요소(HTML, CSS, JS)의 분리는 사이트의 구축/유지보수의 생산성을 높여줌.</li>
+   <li>웹 페이지는 하이퍼텍스트로(Hyper Text) 서로 연결</li>
+   <li>마크 업 - 페이지를 읽는 컴퓨터가 내용의 의미를 알 수 있도록 의미를 부여</li>
+   <li>&lt;tag&gt;내용&lt;/tag&gt;의 방식으로 태그를 마크 업.</li>
+  </ul>
+ </div>
+</div><p></p>					
+					<div class="article-sns">
+						<div class="guide-txt">이 글이 유용하셨다면 친구들에게 공유 해주세요.</div>
+						<div class="sns-inline">
+							<a href="http://www.facebook.com/sharer/sharer.php?u=http://webberstudy.com/html-css/beginning/introduce-html/" class="ico-sns sns-w-facebook" title="페이스북 공유하기"><span class="hide-txt">페이스북</span></a>
+							<a href="https://twitter.com/intent/tweet?text=HTML%20%EC%86%8C%EA%B0%9C&amp;url=http://webberstudy.com/html-css/beginning/introduce-html/" class="ico-sns sns-w-twitter" title="트위터 공유하기"><span class="hide-txt">트위터</span></a>
+							<a href="https://plus.google.com/share?url=http:http://webberstudy.com/html-css/beginning/introduce-html/" class="ico-sns sns-w-google" title="구글플러스 공유하기"><span class="hide-txt">구글 플러스</span></a>
+						</div>
+						<!-- //sns-inline -->
+					</div>
+					<!-- //article-sns -->
+				</div>
+				<!-- //arti-body -->
+			</article>
+
+		</div>
+		<!-- //content-frame -->
+		
+		<div class="content-opt">
+			<div class="link-gplus">
+				<div id="___plusone_0" style="position: absolute; width: 450px; left: -10000px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I0_1575609337595" name="I0_1575609337595" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/fastbutton.html" data-gapiattached="true"></iframe></div><div class="g-plusone" data-annotation="none" data-gapiscan="true" data-onload="true" data-gapistub="true"> </div>
+			</div>
+	<a class="link-comment" href="http://webberstudy.com/html-css/beginning/introduce-html/?m=comment" title="이 문서에 대한 의견 페이지로 이동합니다">의견 보기</a>
+		</div>
+		<!-- //content-opt -->
+		
+		
+		<div class="content-footer">
+			<div class="nav-wrap prev-wrap">
+				<a href="http://webberstudy.com/html-css/beginning/prepare/" class="link-bro link-prev" rel="prev" title="이전 글보러 가기">
+					<span class="target">이전 글</span>
+					<span class="arti-title">웹 제작 준비하기</span>
+				</a>
+			</div>
+			<div class="nav-wrap next-wrap">
+				<a href="http://webberstudy.com/html-css/beginning/start-html/" class="link-bro link-next" rel="next" title="다음 글보러 가기">
+					<span class="target">다음 글</span>
+					<span class="arti-title">HTML 시작하기</span>
+				</a>
+			</div>
+			<!-- //next-wrap -->
+		
+		</div>
+		<!-- //content-footer -->
+		
+
+ 	
+		<div class="content-dot-nav">
+			<div class="content-index" id="content-index"><span class="page-btn page-now"></span><span class="page-btn"></span><span class="page-btn"></span><span class="page-btn"></span></div>
+			<!-- //content-index -->
+		</div>
+		<!-- //content-dot-nav -->
+		
+		
+		
+	</div>
+	<!-- //main-content -->
+	<footer class="main-footer" style="display:none;">
+		<p class="copyright">© WebberStudy</p>
+	</footer>
+	<!-- //main-footer -->
+	<!-- <div class="nav-cover" id="nav-cover"> </div> -->
+</div>
+<!-- //wrapper -->
+
+</div>
+<!-- //body-frame -->
+<script data-main="/ui1/webberjs/view/class" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/require.min.js.다운로드" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50961234-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<div class="swiftype-widget"><div class="autocomplete" style="position: absolute; z-index: 9999; top: 28px; left: 1664px; width: 156px; display: none;"><ul></ul></div></div><div class="swiftype-widget"><div class="autocomplete" style="position: absolute; z-index: 9999; top: 25px; left: 0px; width: 156px; display: none;"><ul></ul></div></div><iframe name="oauth2relay793217444" id="oauth2relay793217444" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0px;width:0px;height:0px;" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/saved_resource(6).html"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_7726378373841" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/saved_resource(7).html"></iframe></body><iframe id="google_esf" name="google_esf" src="./HTML 소개 - 웹 제작 시작하기 - 웨버스터디_files/zrt_lookup.html" data-ad-client="ca-pub-7839575775830338" style="display: none;"></iframe></html>

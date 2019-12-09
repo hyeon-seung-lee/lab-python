@@ -1,0 +1,18 @@
+require.config({
+	// 'baseUrl' : '/ui1/webberjs',
+	'paths' : {
+		'jquery' : '//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min'
+	}
+});
+
+require(
+	[
+		'jquery',
+		'../view/common'
+
+	],
+function($, common ){
+
+	common.load();
+
+});
