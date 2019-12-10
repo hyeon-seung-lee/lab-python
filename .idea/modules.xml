@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../chn_words_website/.idea/chn_words_website.iml" filepath="$PROJECT_DIR$/../chn_words_website/.idea/chn_words_website.iml" />
-      <module fileurl="file://$USER_HOME$/Documents/GitHub/kakao-clone-v2/.idea/kakao-clone-v2.iml" filepath="$USER_HOME$/Documents/GitHub/kakao-clone-v2/.idea/kakao-clone-v2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/lab-python.iml" filepath="$PROJECT_DIR$/.idea/lab-python.iml" />
     </modules>
   </component>
