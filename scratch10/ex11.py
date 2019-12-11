@@ -29,10 +29,11 @@ def daum_search(keyword):
 
         soup = BeautifulSoup(html, 'html5lib')
         news_links = soup.select('.coll_cont ul li a.f_link_b')  # css 선택자대로 .class, #id, tag 와 띄어쓰기로 구분
-        for link in news_links:
-            news_title = link.text
-            news_url = link.get('href')
-            print(news_url, news_title)
+        print(news_links)
+        # for link in news_links:
+        #     news_title = link.text
+        #     news_url = link.get('href')
+        #     print(news_url, news_title)
 
 
 if __name__ == '__main__':
