@@ -1,201 +1,147 @@
-import operator
-import os
-import random
-from collections import defaultdict
-from math import exp, pi, sqrt
+from collections import Counter
 
 import numpy as np
-
 import pandas as pd
+import os
+
+from scratch12.ex04 import summarize_by_class, calculate_class_probability
 from sklearn.metrics import confusion_matrix, classification_report
 
-
-class Naive_Bayes():
-    def __init__(self, dataset, label_col_num=-1):
-        self.df_i = dataset
-        self.label_col_num = label_col_num
-        self.dataset = self.change_label_to_int()
-        self.arranged_list = self.label_to_end()
-
-        print('train_test_split -> predict')
-
-    def separate_by_class(self):
-        """데이터 세트를 클래스 별로 분류한 사전(dict)를 리턴
-        {class_0: [[], [], ...],
-         class_1: [[], [], ...], ...}
-         dataset: 리스트라고 가정.
-        """
-        separated = dict()  # 빈 dict를 생성
-        for i in range(len(self.dataset)):  # dataset의 길이(원소의 개수)만큼 반복
-            vector = self.dataset[i]  # dataset의 i번째 row(원소)
-            class_value = vector[-1]  # 벡터의 가장 마지막 원소가 레이블(클래스)
-            if class_value not in separated:
-                # 클래스 값이 dict의 키로 존재하지 않으면
-                separated[class_value] = []  # 비어 있는 리스트를 생성
-            separated[class_value].append(vector)
-        return separated
-
-    def separate_by_class2(self, dataset):
-        separated = defaultdict(list)  # defaultdict 객체 생성
-        for i in range(len(dataset)):  # 리스트의 원소 개수만큼 반복
-            vector = dataset[i]  # 리스트의 i번째 원소
-            class_value = vector[-1]  # 리스트의 마지막 원소는 클래스(레이블)
-            # 클래스를 key를 갖는 리스트에 vector를 추가
-            separated[class_value].append(vector)
-        return separated
-
-    def summarize_dataset(self, dataset):
-        """데이터 세트의 각 컬럼(변수, 특성)의 평균과 표준 편차들을 계산, 리턴
-        [(mean, std, count), (), ...]
-        """
-        # for col in zip(*dataset):
-        #     print(col)
-        # *: unpacking 연산자
-        #   *[1, 2] -> 1, 2
-        #   *[[1,2], [3,4]] -> [1,2], [3,4]
-        # zip(*[[1,2], [3,4]]) -> zip([1,2], [3,4]) -> [1, 3], [2, 4]
-        summaries = [(np.mean(col), np.std(col), len(col))
-                     for col in zip(*dataset)]
-        # 마지막 컬럼은 데이터가 아니라 클래스(레이블)이므로 평균, 표준편차가 필요 없음
-        del summaries[-1]  # 리스트의 마지막 원소를 삭제
-        return summaries
-
-    def summarize_by_class(self, dataset):
-        """데이터 세트의 컬럼(변수, 특성)들에 대해서, 각 클래스 별로
-        평균, 표준 편차, 개수 요약
-        {class_0: [(x1_mean, x1_std, x1_len), (x2_mean, x2_std, x2_len), ...],
-         class_1: [(x1_mean, x1_std, x1_len), (x2_mean, x2_std, x2_len), ...],
-         ...}
-        """
-        # 데이터 세트를 클래스 별로 분류
-        separated = self.separate_by_class2(dataset)
-        summaries = dict()
-        for class_value, vectors in separated.items():
-            summaries[class_value] = self.summarize_dataset(vectors)
-        return summaries
-
-    def calculate_probability(self, x, mu, sigma):
-        """Gaussian Normal Distribution"""
-        exponent = exp(-(x - mu) ** 2 / (2 * sigma ** 2))
-        return (1 / (sqrt(2 * pi) * sigma)) * exponent
-
-    def calculate_class_probability(self, summaries, vector):
-        """주어진 vector의 각 클래스별 예측값을 계산
-        P(class|x1,x2) ~ P(class) * P(x1|class) * P(x2|class)
-        """
-        total_rows = sum([vectors[0][2] for _, vectors in summaries.items()])
-        probabilities = dict()
-        for class_value, class_summaries in summaries.items():
-            # p = P(class)
-            probabilities[class_value] = class_summaries[0][2] / total_rows
-            for i in range(len(class_summaries)):
-                mu, sigma, count = class_summaries[i]
-                # prob = P(x1|class)
-                prob = self.calculate_probability(vector[i], mu, sigma)
-                # p = P(class) * P(x1|class)
-                probabilities[class_value] *= prob
-        return probabilities
+def train_test_split(df, test_size):
+    """df=데이터 프레임, test_size=테스트 세트의 비율
+    학습 세트(X_train)와 검증 세트(X_test)를 리턴
+    train/test set: 리스트 또는 np.ndarray
+    [[x1, x2, ..., lable1], [x1, x2, ..., label2], [], ...], [[], [], [], ...]
+    """
+    # DataFrame을 numpy.ndarray 타입으로 변환
+    array = df.to_numpy()
+    # array의 순서를 무작위로 섞음.
+    np.random.seed(1213)
+    np.random.shuffle(array)
+    # 학습 세트/테스트 세트를 나누기 위한 인덱스
+    cut = int(len(array) * (1 - test_size))
+    # 학습 세트/테스트 세트로 나눔
+    train_set = array[:cut]
+    test_set = array[cut:]
+    # 결과 리턴
+    return train_set, test_set
 
 
-    def label_to_end(self):
-        print(self.dataset.tail())
-        df_without_label = self.dataset.iloc[:, :self.label_col_num]
-        df_label = self.dataset.iloc[:, self.label_col_num]
-        row_num = len(df_without_label)
-        arranged_list = []
-        temp = []
-        for i in range(row_num):
-            for data in df_without_label.iloc[i]:
-                temp.append(data)
-            temp.append(df_label.iloc[i])
-            arranged_list.append(temp)
-            temp = []
-        return arranged_list
+def predict(summaries, X_test):
+    """테스트 세트의 예측값들의 배열(리스트)을 리턴
+    [0, 1, 1, 2, 0, 0, 2, ...]"""
+    predicts = []  # 빈 리스트 생성
+    # X_test의 원소 개수만큼 반복하면서
+    for test in X_test:
+        # 각 원소(예측값을 찾으려는 데이터)의 클래스에 속할 확률을 계산
+        probabilities = calculate_class_probability(summaries, test)
+        # 각 클래스에 속할 확률들 중에서 최댓값을 찾음
+        best_label, _ = sorted(probabilities.items(), key=lambda x: -x[1])[0]
+        # sorted(Iterable, key=정렬기준함수):
+        #   정렬 기준 함수의 리턴값을 기준으로 Iterable 타입을 정렬함
+        # sorted(dict): dict의 키들을 오름차순 정렬한 리스트
+        # sorted(dict.values()): dict의 값들을 오름차순 정렬한 리스트
+        # sorted(dict.items()): (key, value) 튜플을 key값을 기준으로 정렬
+        # best_label, best_prob = None, -1
+        # for k, v in probabilities.items():
+        #     if v > best_prob:  # 더 큰 확률값을 찾을 경우
+        #         best_prob = v  # 찾은 확률값으로 best_prob을 업데이트
+        #         best_label = k  # 찾은 확률값의 키로 예측 레이블을 업데이트
+        # # 확률 최댓값의 키값을 예측값 리스트에 추가
+        predicts.append(best_label)
 
-    def train_test_split(self, test_size):  # Ctrl + Alt + ←
-        """
-        X: numpy.ndarray. n x m
-        y: numpy.ndarray. 원소의 개수가 n개인 1차원 배열
-        len(X) == len(y) 가정.
-        test_size: 0.0 ~ 1.0
-        """
-        X = np.asarray(self.arranged_list)
-        length = len(X)
-        # 인덱스를 저장하는 배열
-        indices = np.array([i for i in range(length)])
-        print('shuffle 전:', indices)
-        # 인덱스를 임의로 섞음
-        np.random.shuffle(indices)
-        print('shuffle 후:', indices)
-        # Train set의 개수
-        cut = int(length * (1 - test_size))  # 소수점 버림
-        X_train = X[indices[:cut]]  # Train set points
-        X_test = X[indices[cut:]]  # Test set points
-        train_label = X[indices[:cut],self.label_col_num]  # Train set points
-        test_label = X[indices[cut:],self.label_col_num]  # Test set points
-
-        return X_train, train_label, X_test, test_label
-
-    def change_label_to_int(self):
-        if type(self.df_i.iloc[0, 4]) == type(int()):
-            pass
-        else:
-            length = len(self.df_i)
-            label = []
-            for row in range(length):
-                label.append(self.df_i.iloc[row, 4])
-            print(label)
-            set_label = dict()
-            for index, lbl in enumerate(list(set(label))):
-                set_label[lbl] = index
-            print(set_label)
-            temp_label = []
-            for lb in label:
-                for key, item in set_label.items():
-                    if lb == key:
-                        temp_label.append(item)
-
-                    else:
-                        continue
-            print(temp_label)
-            temp_label = pd.DataFrame(temp_label)
-
-            del self.df_i[4]
-            print(self.df_i.head())
-            result_df = pd.concat([self.df_i, temp_label], axis=1)
-            result_df.columns = [0, 1, 2, 3, 'label']
-            return result_df
-
-    def predict(self, data):
-        """테스트 세트의 예측값들의 리스트를 리턴
-        [0, 1, 1, 2, 0, 0, 1, ...]"""
-        summaries = self.summarize_by_class(data)  # 1 통계량요약
-        result = []
-        for list_ in data:
-
-            probabilities = self.calculate_class_probability(summaries, list_)  # 각 데이터셋에 대하여 class prob. 계산
-            sorted_ = sorted(probabilities.items(), key=operator.itemgetter(1),reverse=True)
-            result.append(sorted_[0][0])
-        return result
+    return predicts
 
 
 if __name__ == '__main__':
     iris_file = os.path.join('..', 'scratch11', 'iris.csv')
     cancer_file = os.path.join('..', 'scratch11', 'wisc_bc_data.csv')
 
-    iris_dataset = pd.read_csv(iris_file, header=None)
+    iris_dataset = pd.read_csv(iris_file,
+                               header=None,
+                               names=['sl', 'sw', 'pl', 'pw', 'Class'])
+    print(iris_dataset.head())
+    print(iris_dataset.shape)
+    print(iris_dataset.iloc[:, -1])  # DataFrame의 가장 마지막 컬럼
+    iris_dataset.info()
+    # iris 품종: Iris-setosa, Iris-versicolor, Iris-virginica
+    species = set(iris_dataset.iloc[:, -1])
+    print(species)
+
+    # Iris-setosa=0, Iris-versicolor=1, Iris-virginica=2로 변경
+    iris_dataset.loc[iris_dataset['Class'] == 'Iris-setosa', 'Class'] = 0
+    iris_dataset.loc[iris_dataset['Class'] == 'Iris-versicolor', 'Class'] = 1
+    iris_dataset.loc[iris_dataset['Class'] == 'Iris-virginica', 'Class'] = 2
+    print(iris_dataset.head())
+
+    species = set(iris_dataset.iloc[:, -1])  # 'Class' 컬럼
+    print(species)
+    species_counts = Counter(iris_dataset.iloc[:, -1])
+    print(species_counts)
+
+    iris_train, iris_test = train_test_split(iris_dataset, test_size=0.2)
+    print('Train set:', iris_train.shape)
+    print('Test set:', iris_test.shape)
+    print(iris_train[-5:])  # [:5] - 처음 5개 원소, [-5:] - 마지막 5개 원소
+
+    # 학습 데이터 세트만으로 summaries(평균, 표준 편차, 개수)를 찾음.
+    model = summarize_by_class(iris_train)  # GaussianNB에서 사용할 mu, sigma
+    print(model)
+    print(model[0.0])
+
+    # 검증(테스트) 데이터 세트로 모델에서 예측하는 값들을 찾음.
+    iris_pred = predict(model, iris_test)
+    print(iris_pred)
+    print(iris_test[:, -1] == iris_pred)
+    print(confusion_matrix(iris_test[:, -1], iris_pred))
+    print(classification_report(iris_test[:, -1], iris_pred))
+
+    # 데이터 준비
     cancer_dataset = pd.read_csv(cancer_file)
 
-    random.seed(1212)
-    print(iris_dataset.tail())
-    # print(len(iris_dataset))
-    print(cancer_dataset.tail())
-    # print(len(cancer_dataset))
-    naive_iris = Naive_Bayes(iris_dataset, 4)
-    X_train, X_label, y_test, y_label = naive_iris.train_test_split(test_size=0.25)
-    train_result = naive_iris.predict(X_train)
-    test_result = naive_iris.predict(y_test)
-    print('train_result=', train_result)
-    print('test_result=', test_result)
-    print(confusion_matrix(test_result, y_label))
-    print(classification_report(test_result, y_label))
+    # 데이터 확인
+    print(cancer_dataset.head())
+    cancer_dataset.info()
+
+    # 데이터 전처리 - 'id' 삭제, 'diagnosis' 변수(컬럼) 값들을 숫자로 변환
+    ret = cancer_dataset.drop(columns=['id'])
+    # 원본 데이터 프레임은 그대로 남아 있고, 컬럼이 삭제된 새로운 데이터 프레임을 리턴
+    print(ret.head())
+
+    del cancer_dataset['id']  # 원본 데이터 프레임에서 컬럼을 삭제
+    print(cancer_dataset.head())
+
+    diagnosis = set(cancer_dataset['diagnosis'])
+    print(diagnosis)
+    # B(Benign)=0, M(Malignant)=1
+    cancer_dataset.loc[cancer_dataset['diagnosis'] == 'B', 'diagnosis'] = 0
+    cancer_dataset.loc[cancer_dataset['diagnosis'] == 'M', 'diagnosis'] = 1
+
+    # cancer_dataset.loc[cancer_dataset['diagnosis'] == 'B', 'Class'] = 0
+    # cancer_dataset.loc[cancer_dataset['diagnosis'] == 'M', 'Class'] = 1
+    # del cancer_dataset['diagnosis']
+    # print(cancer_dataset.tail())
+
+    # 'diagnosis' 컬럼을 데이터 프레임의 마지막 컬럼으로
+    column_names = cancer_dataset.columns.tolist()
+    # [name for name in cancer_dataset.columns]
+    print(column_names)
+    column_names.remove('diagnosis')
+    column_names.append('diagnosis')
+    print(column_names)
+    # df = cancer_dataset.reindex(columns=column_names)
+    # print(df.head())
+    df = cancer_dataset[column_names]
+    print(df.head())
+
+    df = cancer_dataset.loc[:, ::-1]
+    print(df.head())
+
+    cancer_train, cancer_test = train_test_split(df, test_size=0.2)
+    model = summarize_by_class(cancer_train)
+    predicts = predict(model, cancer_test)
+    print(confusion_matrix(cancer_test[:, -1], predicts))
+    print(classification_report(cancer_test[:, -1], predicts))
+
+
+

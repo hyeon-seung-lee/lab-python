@@ -24,7 +24,7 @@ print('type X:', type(X))
 print(X[:5])
 y = iris.target  # 분류 클래스(레이블)
 print('type y:', type(y))
-print(y[:5])
+print(y[:5], y[-5:])
 
 X, y = datasets.load_iris(return_X_y=True)
 # return_X_y=True: numpy.ndarray들의 튜플(data, target)을 리턴
@@ -35,7 +35,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 # 데이터들 변환(스케일링)
 scaler = StandardScaler()  # 생성자 호출 - 변환기 객체 생성
-scaler.fit(X_train, y_train)  # 학습 데이터의 평균과 표준 편차를 데이터 변환할 때 이용하기 위해서
+scaler.fit(X_train)  # 학습 데이터의 평균과 표준 편차를 데이터 변환할 때 이용하기 위해서
 X_train_transformed = scaler.transform(X_train)  # 학습 데이터 세트 변환
 X_test_transformed = scaler.transform(X_test)  # 테스트 데이터 세트 변환
 
