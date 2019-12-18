@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c253eb7c-0ab8-4775-88ae-ee4d168c6673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scratch13/ex0501.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch13/ex06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch14/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch14/ex01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch14/ex02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch14/ex03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch14/ex04.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch13/ex05.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch13/ex05.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,7 @@
       <recent name="C:\dev\lab-python" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ex01 (1)">
+  <component name="RunManager" selected="Python.ex04">
     <configuration name="ex01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -103,7 +101,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex05" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ex02" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,11 +109,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch13" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch14" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch13/ex05.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch14/ex02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -124,7 +122,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex0501" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ex03" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -132,11 +130,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch13" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch14" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch13/ex0501.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch14/ex03.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,7 +143,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex06" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ex04" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,11 +151,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch13" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch14" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch13/ex06.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch14/ex04.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ex04" />
+        <item itemvalue="Python.ex03" />
+        <item itemvalue="Python.ex02" />
         <item itemvalue="Python.ex01 (1)" />
         <item itemvalue="Python.ex01 (2)" />
-        <item itemvalue="Python.ex06" />
-        <item itemvalue="Python.ex05" />
-        <item itemvalue="Python.ex0501" />
       </list>
     </recent_temporary>
   </component>
@@ -257,22 +255,22 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1920.1200@0.0.1920.1200" timestamp="1575865562595" />
-    <state width="1877" height="359" key="GridCell.Tab.0.bottom" timestamp="1576571896703">
+    <state width="1899" height="359" key="GridCell.Tab.0.bottom" timestamp="1576657662767">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1877" height="359" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1576571896703" />
-    <state width="1877" height="359" key="GridCell.Tab.0.center" timestamp="1576571896703">
+    <state width="1899" height="359" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1576657662767" />
+    <state width="1899" height="359" key="GridCell.Tab.0.center" timestamp="1576657662767">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1877" height="359" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1576571896703" />
-    <state width="1877" height="359" key="GridCell.Tab.0.left" timestamp="1576571896703">
+    <state width="1899" height="359" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1576657662767" />
+    <state width="1899" height="359" key="GridCell.Tab.0.left" timestamp="1576657662767">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1877" height="359" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1576571896703" />
-    <state width="1877" height="359" key="GridCell.Tab.0.right" timestamp="1576571896703">
+    <state width="1899" height="359" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1576657662767" />
+    <state width="1899" height="359" key="GridCell.Tab.0.right" timestamp="1576657662767">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1877" height="359" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1576571896703" />
+    <state width="1899" height="359" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1576657662767" />
     <state x="461" y="241" key="SettingsEditor" timestamp="1576043578739">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -281,6 +279,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="652" y="423" key="com.intellij.ide.util.TipDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1576456617604" />
+    <state x="447" y="189" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576637928189">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="447" y="189" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1576637928189" />
     <state x="466" y="123" width="745" height="897" key="find.popup" timestamp="1575940489109">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
