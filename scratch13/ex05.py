@@ -153,7 +153,7 @@ mse = mean_squared_error(y_test, y_pred_rm_lstat)
 rmse = np.sqrt(mse)
 r2 = r2_score(y_test, y_pred_rm_lstat)
 print(f'Price ~ RM + LSTAT: RMSE = {rmse}, R**2 = {r2}')
-
+print('-====================================')
 # Price ~ RM + LSTAT + RM**2 + RM * LSTAT + LSTAT**2
 # Price = b0 + b1 * rm + b2 * lstat + b3 * rm**2 + b4 * rm * lstat + b5 * lstat **2
 # 학습 세트에 다항식항(컬럼)을 추가
