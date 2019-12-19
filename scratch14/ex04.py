@@ -96,6 +96,7 @@ print('np.sub: \n', (np_x - np_y))
 print('np.mul: \n', (np_x * np_y))
 print('np.div: \n', (np_x / np_y))
 print('np.dot: \n', np.dot(np_x, np_y))
+print('np.dot: \n', np_x@np_y)
 
 """
 항등 행렬(Indentity matrix): 대각선의 원소는 1이고, 나머지 원소는 0인 정사각행렬
