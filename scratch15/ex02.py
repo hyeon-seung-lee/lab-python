@@ -2,7 +2,7 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 from collections import namedtuple, Counter, defaultdict
-from typing import NamedTuple
+from typing import NamedTuple, Any
 
 
 # Candidate = namedtuple('Candidate',
@@ -97,6 +97,78 @@ def partition_entropy_by(dataset, by_partition, by_entropy):
     return ent
 
 
+class Leaf(NamedTuple):  # NamedTuple을 상속받는 클래스
+    value: Any
+
+
+class Split(NamedTuple):
+    attribute: str  # 트리에서 가지(branch)가 나누어지는 기준
+    subtree: dict
+
+
+def predict(model, sample):
+    """sample을 model(의사 결정 나무)에 적용했을 때 예측 결과를 리턴"""
+    if isinstance(model, Leaf):
+        # model이 최종 노드인 Leaf 타입이면, Leaf가 가지고 있는 value(값)을 리턴.
+        return model.value
+
+    # model이 아닌 경우에는, 가지를 따라 내려가야하기 때문에
+    # 샘플이 attribute로 가지고 있는 값을 찾아서, 해당 가지로 내려감.
+    subtree_key = getattr(sample, model.attribute)
+    print('subtree_key:', subtree_key)
+
+    subtree = model.subtree[subtree_key]
+    return predict(subtree, sample)
+
+
+def build_tree(dataset, by_splits, target):
+    print('\n >>> Building Tree ...')
+    print(f'Dataset({len(dataset)})={dataset}\n')
+    print(f'By_Splits:', by_splits, ' // Target:', target)
+
+    # target의 개수를 샘  True: x, False: y}
+    target_counts = Counter(getattr(sample, target)
+                            for sample in dataset)
+    print(f'target_counts: {target_counts}')
+    # Counter의 length가 1이면, Leaf를 생성하고 종료
+    if len(target_counts) == 1:
+        keys = list(target_counts.keys())
+        # [ k for k in target_counts.keys() ]
+        # dict의 keys()가 리턴하는 타입은 리스트가 아니기 때문에
+        # Leaf 파라미터(리스트)에 대입하기 위해서 []를 사용한다
+        result = keys[0]  # True 또는 False
+        leaf = Leaf(result)
+        print(f'leaf: {leaf}')
+        return leaf
+
+    # 트리의 depth가 깊어져서 더 이상 서브 트리를 나눌 기준이 없을 때
+    if not by_splits:  # if len(by_splits) == 0:
+        return Leaf(list(target_counts.keys())[0])
+    # Counter의 length가 1이 아니면, 파티션을 나눌 수 있음
+    # by_splits(가지 나누는 기준)의 각 변수로 파티션을 나눔.
+    # 각 파티션별 엔트로피를 계산해서 가장 낮은 엔트로피를 선택
+    # partition_entropy_by(dataset, by_split, by_entropy)를 호출할 수 있는
+    # wrapper 함수(helper 함수)를 작성
+    def splited_entropy(split_attr):
+        result = partition_entropy_by(dataset, split_attr, target)
+        print('splitted entry =', result)
+        return result
+
+    best_spliter = min(by_splits, key=splited_entropy)  # by_splits의 값을 각각 key 함수에 대입하여, min값을 찾음
+    print('best_splitter:', best_spliter)  # entropy가 가장 적은 결정자
+    # 엔트로피 최솟값을 주는 변수(best_spliter)로 파티션을 만듬
+    partitions = partition_by(dataset, best_spliter)
+    print(f'partitions: {partitions}')
+    # 선택한 변수를 제외한 나머지 변수들로 위의 과정을 반복.
+    new_split = [x for x in by_splits if x != best_spliter]  # branch 기준 리스트에서 선택된 변수 제거
+    print(f'제거 전: {by_splits}, 제거 후 by_splits: {new_split}')
+    # 서브 트리 생성
+    subtree = {k: build_tree(subset, new_split, target)
+               for k, subset in partitions.items()}
+
+    # Split 객체를 생성해서 리턴
+    return Split(best_spliter, subtree)
+
 if __name__ == '__main__':
     candidates = [Candidate('Senior', 'Java', False, False, False),
                   Candidate('Senior', 'Java', False, True, False),
@@ -147,7 +219,7 @@ if __name__ == '__main__':
     level = ['junior', 'senior', 'mid', 'junior']
     # P(junior) = 2/4, P(senior) = 1/4, P(mid) = 1/4
     cls_prob = class_probabilities(level)
-    print(cls_prob)
+    print('cls_prob:', cls_prob)
 
     # partition_by 함수 테스트
     partition_by_level = partition_by(candidates, 'level')
@@ -165,3 +237,27 @@ if __name__ == '__main__':
     print('entropy partitioned by lang :', ent_tweets)
     ent_phd = partition_entropy_by(candidates, 'phd', 'result')
     print('entropy partitioned by lang :', ent_phd)
+
+    hire_tree = Split(
+        'level',
+        {
+            'Senior': Split(
+                'tweets',
+                {True: Leaf(True), False: Leaf(False)}),  # sub-tree
+            'Mid': Leaf(True),  # leaf(합격)
+            'Junior': Split(
+                'phd',
+                {True: Leaf(False), False: Leaf(True)})}
+    )
+
+    candidate_1 = Candidate('Senior', 'Java', False, False, False)
+    result = predict(hire_tree, candidate_1)
+    print('합격 여부=', result)
+
+    candidate_2 = Candidate('Mid', 'Python', False, False, True)
+    result = predict(hire_tree, candidate_2)
+    print('합격 여부=', result)
+
+    # build_tree 함수 테스트
+    tree=build_tree(candidates, ['level', 'lang', 'tweets', 'phd'], 'result')
+    print(tree)
