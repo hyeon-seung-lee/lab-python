@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c253eb7c-0ab8-4775-88ae-ee4d168c6673" name="Default Changelist" comment="decision_tree">
+      <change afterPath="$PROJECT_DIR$/reinforce-learning/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reinforce-learning/ex01_gym.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reinforce-learning/ex02_cartpole.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reinforce-learning/ex03_cartpole_policy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reinforce-learning/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lab-python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab-python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,10 +50,11 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub/kakao-clone-v2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -55,20 +63,8 @@
       <recent name="C:\dev\lab-python" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.ex03">
-    <configuration name="ex01_named_tuple" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.ex03_cartpole_policy">
+    <configuration name="ex01_gym" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -76,11 +72,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scratch15" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reinforce-learning" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch15/ex01_named_tuple.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reinforce-learning/ex01_gym.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -110,7 +106,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex02 (5)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ex02_cartpole" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,32 +114,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reinforce-learning" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/ex02 (5).py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ex02" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="lab-python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/ex02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reinforce-learning/ex02_cartpole.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -173,15 +148,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ex03_cartpole_policy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reinforce-learning" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reinforce-learning/ex03_cartpole_policy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ex03_cartpole_policy" />
+        <item itemvalue="Python.ex02_cartpole" />
+        <item itemvalue="Python.ex01_gym" />
         <item itemvalue="Python.ex03" />
         <item itemvalue="Python.ex02 (1)" />
-        <item itemvalue="Python.ex02" />
-        <item itemvalue="Python.ex01_named_tuple" />
-        <item itemvalue="Python.ex02 (5)" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -256,33 +264,39 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="609" y="189" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1576825192523" />
-    <state x="740" y="354" key="FileChooserDialogImpl" timestamp="1576050547135">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="574" y="-846" key="FileChooserDialogImpl" timestamp="1580777546730">
+      <screen x="-166" y="-1200" width="1920" height="1200" />
     </state>
+    <state x="574" y="-846" key="FileChooserDialogImpl/0.0.1600.900/-166.-1200.1920.1200@-166.-1200.1920.1200" timestamp="1580777546730" />
     <state x="740" y="354" key="FileChooserDialogImpl/0.0.1920.1200@0.0.1920.1200" timestamp="1576050547135" />
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1575865562595">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1920.1200@0.0.1920.1200" timestamp="1575865562595" />
-    <state width="1899" height="359" key="GridCell.Tab.0.bottom" timestamp="1576833553524">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1899" height="335" key="GridCell.Tab.0.bottom" timestamp="1580789253195">
+      <screen x="-166" y="-1200" width="1920" height="1200" />
     </state>
+    <state width="1899" height="335" key="GridCell.Tab.0.bottom/0.0.1600.900/-166.-1200.1920.1200@-166.-1200.1920.1200" timestamp="1580789253195" />
     <state width="1899" height="359" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1576833553524" />
-    <state width="1899" height="359" key="GridCell.Tab.0.center" timestamp="1576833553524">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1899" height="335" key="GridCell.Tab.0.center" timestamp="1580789253195">
+      <screen x="-166" y="-1200" width="1920" height="1200" />
     </state>
+    <state width="1899" height="335" key="GridCell.Tab.0.center/0.0.1600.900/-166.-1200.1920.1200@-166.-1200.1920.1200" timestamp="1580789253195" />
     <state width="1899" height="359" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1576833553524" />
-    <state width="1899" height="359" key="GridCell.Tab.0.left" timestamp="1576833553524">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1899" height="335" key="GridCell.Tab.0.left" timestamp="1580789253195">
+      <screen x="-166" y="-1200" width="1920" height="1200" />
     </state>
+    <state width="1899" height="335" key="GridCell.Tab.0.left/0.0.1600.900/-166.-1200.1920.1200@-166.-1200.1920.1200" timestamp="1580789253195" />
     <state width="1899" height="359" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1576833553524" />
-    <state width="1899" height="359" key="GridCell.Tab.0.right" timestamp="1576833553524">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1899" height="335" key="GridCell.Tab.0.right" timestamp="1580789253195">
+      <screen x="-166" y="-1200" width="1920" height="1200" />
     </state>
+    <state width="1899" height="335" key="GridCell.Tab.0.right/0.0.1600.900/-166.-1200.1920.1200@-166.-1200.1920.1200" timestamp="1580789253195" />
     <state width="1899" height="359" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1576833553524" />
-    <state x="461" y="241" key="SettingsEditor" timestamp="1576043578739">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="295" y="-959" key="SettingsEditor" timestamp="1580777814006">
+      <screen x="-166" y="-1200" width="1920" height="1200" />
     </state>
+    <state x="295" y="-959" key="SettingsEditor/0.0.1600.900/-166.-1200.1920.1200@-166.-1200.1920.1200" timestamp="1580777814006" />
     <state x="461" y="241" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1576043578739" />
     <state x="652" y="423" key="com.intellij.ide.util.TipDialog" timestamp="1577061884625">
       <screen x="0" y="0" width="1920" height="1200" />
