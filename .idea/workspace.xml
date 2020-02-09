@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c253eb7c-0ab8-4775-88ae-ee4d168c6673" name="Default Changelist" comment="decision_tree">
-      <change afterPath="$PROJECT_DIR$/reinforce-learning/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reinforce-learning/ex01_gym.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reinforce-learning/ex02_cartpole.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reinforce-learning/ex03_cartpole_policy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reinforce-learning/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lab-python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab-python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -298,9 +291,10 @@
     </state>
     <state x="295" y="-959" key="SettingsEditor/0.0.1600.900/-166.-1200.1920.1200@-166.-1200.1920.1200" timestamp="1580777814006" />
     <state x="461" y="241" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1576043578739" />
-    <state x="652" y="423" key="com.intellij.ide.util.TipDialog" timestamp="1577061884625">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="486" y="-777" key="com.intellij.ide.util.TipDialog" timestamp="1580879619969">
+      <screen x="-166" y="-1200" width="1920" height="1200" />
     </state>
+    <state x="486" y="-777" key="com.intellij.ide.util.TipDialog/0.0.1600.900/-166.-1200.1920.1200@-166.-1200.1920.1200" timestamp="1580879619969" />
     <state x="652" y="423" key="com.intellij.ide.util.TipDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1577061884625" />
     <state x="447" y="189" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576637928189">
       <screen x="0" y="0" width="1920" height="1200" />
